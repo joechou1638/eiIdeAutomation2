@@ -1,0 +1,1383 @@
+23/12/2013 14:17:08 Logger 
+23/12/2013 14:17:08 Logger 
+23/12/2013 14:17:08 Logger ====================== Start Logging======================
+23/12/2013 14:17:08 Logger DEBUG: system type: ST
+23/12/2013 14:17:08 Logger DEBUG: Staging: ST
+23/12/2013 14:17:08 Logger DEBUG: Production: PR
+23/12/2013 14:17:08 Logger DEBUG: st_prefix: st_
+23/12/2013 14:17:08 Logger DEBUG: pr_prefix: pr_
+23/12/2013 14:17:08 Logger DEBUG: got inputAddr: st_browserType
+23/12/2013 14:17:08 Logger DEBUG: got input data: CH
+23/12/2013 14:17:08 Logger DEBUG: got browser type: CH
+23/12/2013 14:17:08 Logger DEBUG: got inputAddr: st_chromeDriverPath
+23/12/2013 14:17:08 Logger DEBUG: got input data: //Users//joechou//Downloads//chromedriver
+23/12/2013 14:17:08 Logger DEBUG: got chrome driver path: //Users//joechou//Downloads//chromedriver
+23/12/2013 14:17:10 Logger DEBUG:  entering loginTest1()
+23/12/2013 14:17:10 Logger DEBUG: got inputAddr: st_testSiteUrl
+23/12/2013 14:17:10 Logger DEBUG: got input data: https://staging-imp:weshouldtestthiscarefully@staging-ide.electricimp.com
+23/12/2013 14:17:10 Logger DEBUG: got test url: https://staging-imp:weshouldtestthiscarefully@staging-ide.electricimp.com
+23/12/2013 14:17:11 Logger DEBUG: got inputAddr: st_uname
+23/12/2013 14:17:11 Logger DEBUG: got input data: tester_Joe
+23/12/2013 14:17:11 Logger DEBUG: got inputAddr: st_pword
+23/12/2013 14:17:11 Logger DEBUG: got input data: renzhen1
+23/12/2013 14:17:11 Logger DEBUG:  login user name: tester_Joe, password: renzhen1=======
+23/12/2013 14:17:13 Logger DEBUG:  page title: Electric Imp - IDE - staging=======
+23/12/2013 14:17:14 Logger DEBUG: exiting loginTest1()
+23/12/2013 14:17:14 Logger DEBUG: Entering addFIMpTest()
+23/12/2013 14:17:20 Logger DEBUG: got number of elements: 1
+23/12/2013 14:17:20 Logger DEBUG: target factory imp already added
+23/12/2013 14:17:20 Logger DEBUG: Entering addWebhookTest()
+23/12/2013 14:17:22 Logger DEBUG: should be on IDE page, going there
+23/12/2013 14:17:28 Logger DEBUG: got inputAddr: st_webhookUrl
+23/12/2013 14:17:28 Logger DEBUG: got input data: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 14:17:28 Logger DEBUG: got test webhook URL: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 14:17:29 Logger DEBUG: number of elements: 0
+23/12/2013 14:17:30 Logger DEBUG: select option size: 2
+23/12/2013 14:17:31 Logger DEBUG: select option size: 3
+23/12/2013 14:17:32 Logger DEBUG: action result: Success The webhooks have been updated for this model!
+23/12/2013 14:17:32 Logger DEBUG: number of elements: 1
+23/12/2013 14:17:32 Logger DEBUG: got number of webhooks: 1
+23/12/2013 14:17:32 Logger DEBUG: got text: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 14:17:35 Logger DEBUG: Exiting addWebhookTest()
+23/12/2013 14:17:35 Logger DEBUG: entering agentServerTest()
+23/12/2013 14:17:37 Logger DEBUG: should be on IDE page, going there
+23/12/2013 14:17:41 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 14:17:41 Logger DEBUG: oldWin: CDwindow-F3299BB5-2B9C-024D-122E-509E45E9D137
+23/12/2013 14:17:47 Logger DEBUG: newWin: CDwindow-14A4A7D0-5A44-4038-54A7-EDEF72B8EABB
+23/12/2013 14:17:48 Logger DEBUG: response text: No HTTP Handler
+23/12/2013 14:17:49 Logger DEBUG: Entering assignModelTest()
+23/12/2013 14:17:52 Logger DEBUG: got inputAddr: st_newDevId
+23/12/2013 14:17:52 Logger DEBUG: got input data: 235699b236a7c9ee
+23/12/2013 14:17:54 Logger DEBUG: number of elements: 0
+23/12/2013 14:17:54 Logger ERROR: failed to find required device in new device, id:235699b236a7c9ee
+23/12/2013 14:17:54 Logger DEBUG: entering changeFWTest()
+23/12/2013 14:17:59 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 14:18:01 Logger DEBUG: action result: Success: This model has been promoted to the Ops Panel.
+23/12/2013 14:18:09 Logger DEBUG: select option size: 2
+23/12/2013 14:18:11 Logger DEBUG: action result: Success The associated firmware with this model has been updated!
+23/12/2013 14:18:14 Logger DEBUG: exiting changeFWTest()
+23/12/2013 14:18:14 Logger DEBUG: entering deleteDevTest()
+23/12/2013 14:18:16 Logger DEBUG: should be on IDE page, going there
+23/12/2013 14:18:19 Logger DEBUG: got inputAddr: st_newModName
+23/12/2013 14:18:19 Logger DEBUG: got input data: DelMod2
+23/12/2013 14:18:19 Logger DEBUG: got target model name: DelMod2
+23/12/2013 14:18:19 Logger DEBUG: number of models: 6
+23/12/2013 14:18:19 Logger DEBUG: model path: //ul[@id='model-list-container']/li[ i ]/div
+23/12/2013 14:18:20 Logger DEBUG: got model 1  title: FWMod1
+23/12/2013 14:18:20 Logger DEBUG: got model 2  title: Mod7ST
+23/12/2013 14:18:20 Logger DEBUG: got model 3  title: ModJoe3
+23/12/2013 14:18:20 Logger DEBUG: got model 4  title: ModJoe8
+23/12/2013 14:18:20 Logger DEBUG: got model 5  title: modTem1
+23/12/2013 14:18:20 Logger DEBUG: got model 6  title: ProdMod1
+23/12/2013 14:18:20 Logger DEBUG: no model of device to be deleted
+23/12/2013 14:18:20 Logger DEBUG: Entering deleteFIMpTest()
+23/12/2013 14:18:29 Logger DEBUG: got number of elements: 2
+23/12/2013 14:18:30 Logger DEBUG: action result: Success The webhooks have been updated for this model!
+23/12/2013 14:18:31 Logger DEBUG: entering opsDeployTest()
+23/12/2013 14:18:33 Logger DEBUG: should be on IDE page, going there
+23/12/2013 14:18:37 Logger DEBUG: Entering rmBondTest()
+23/12/2013 14:18:40 Logger DEBUG: got inputAddr: st_rmDevId
+23/12/2013 14:18:40 Logger DEBUG: got input data: 23dummyDevId
+23/12/2013 14:18:40 Logger DEBUG: got rmDevId: 23dummyDevId
+23/12/2013 14:18:40 Logger DEBUG: got inputAddr: st_rmBondPW
+23/12/2013 14:18:40 Logger DEBUG: got input data: dummyPassword
+23/12/2013 14:18:40 Logger DEBUG: got rmBondPW: dummyPassword
+23/12/2013 14:18:48 Logger DEBUG: action result: Error Invalid Credentials
+23/12/2013 14:18:51 Logger DEBUG: Exiting rmBondTest()
+23/12/2013 14:18:51 Logger DEBUG: Entering rmWebhookTest()
+23/12/2013 14:18:53 Logger DEBUG: should be on IDE page, going there
+23/12/2013 14:18:59 Logger DEBUG: got inputAddr: st_webhookUrl
+23/12/2013 14:18:59 Logger DEBUG: got input data: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 14:18:59 Logger DEBUG: got webhook URL: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 14:19:00 Logger DEBUG: number of elements: 0
+23/12/2013 14:19:00 Logger DEBUG: webhook not exist, no deleting.
+23/12/2013 14:19:00 Logger DEBUG: entering searchTest()
+23/12/2013 14:19:02 Logger DEBUG: should be on IDE page, going there
+23/12/2013 14:19:06 Logger DEBUG: got inputAddr: st_searchKey1
+23/12/2013 14:19:06 Logger DEBUG: got input data: 23
+23/12/2013 14:19:06 Logger DEBUG:  searchText: 23======================================
+23/12/2013 14:19:07 Logger DEBUG: sleeping for 2000 ms
+23/12/2013 14:19:09 Logger DEBUG: got number of elements: 2
+23/12/2013 14:19:09 Logger DEBUG: number of new devices found: 2
+23/12/2013 14:19:09 Logger DEBUG: got new devices addr: //div[@class='search-results-new-devices']/div[1]
+23/12/2013 14:19:12 Logger DEBUG: got new devices addr: //div[@class='search-results-new-devices']/div[2]
+23/12/2013 14:19:14 Logger DEBUG: got number of elements: 7
+23/12/2013 14:19:14 Logger DEBUG: number of model devices found: 7
+23/12/2013 14:19:14 Logger DEBUG: max number of model devices allowed (for now): 2
+23/12/2013 14:19:14 Logger DEBUG: got model devices addr: //div[@class='search-results-models']/div[1]
+23/12/2013 14:19:16 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 14:19:17 Logger DEBUG: oldWin: CDwindow-F3299BB5-2B9C-024D-122E-509E45E9D137
+23/12/2013 14:19:23 Logger DEBUG: newWin: CDwindow-ADD63546-4B7E-DF1E-B369-CB68FC857B0E
+23/12/2013 14:19:24 Logger DEBUG: Current Url: https://staging-agent.electricimp.com/ClNeFmPtloq2
+23/12/2013 14:19:24 Logger DEBUG: got inputAddr: st_expectedUrl
+23/12/2013 14:19:24 Logger DEBUG: got input data: agent.electricimp.com
+23/12/2013 14:19:24 Logger DEBUG: expected Url: agent.electricimp.com
+23/12/2013 14:19:24 Logger DEBUG: url OK
+23/12/2013 14:19:25 Logger DEBUG: got model devices addr: //div[@class='search-results-models']/div[2]
+23/12/2013 14:19:27 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 14:19:28 Logger DEBUG: oldWin: CDwindow-F3299BB5-2B9C-024D-122E-509E45E9D137
+23/12/2013 14:19:34 Logger DEBUG: newWin: CDwindow-5E5770B7-C679-57C5-ADAD-AF5C840D030C
+23/12/2013 14:19:35 Logger DEBUG: Current Url: https://staging-agent.electricimp.com/1svCcb9AzxAR
+23/12/2013 14:19:35 Logger DEBUG: got inputAddr: st_expectedUrl
+23/12/2013 14:19:35 Logger DEBUG: got input data: agent.electricimp.com
+23/12/2013 14:19:35 Logger DEBUG: expected Url: agent.electricimp.com
+23/12/2013 14:19:35 Logger DEBUG: url OK
+23/12/2013 14:19:39 Logger DEBUG: exiting searchTest()
+23/12/2013 14:19:39 Logger DEBUG: entering sidebarTest()
+23/12/2013 14:19:42 Logger DEBUG: number of models: 6
+23/12/2013 14:19:42 Logger DEBUG: max number of models allowed(for now): 2
+23/12/2013 14:19:42 Logger DEBUG: model path: //ul[@id='model-list-container']/li[ i ]/div
+23/12/2013 14:19:42 Logger DEBUG: model 1: FWMod1
+23/12/2013 14:19:43 Logger DEBUG: device path: //ul[@id='model-list-container']/li[1]/ul/li/div
+23/12/2013 14:19:43 Logger DEBUG: number of devices: 1
+23/12/2013 14:19:43 Logger DEBUG: device 1: FWDev1
+23/12/2013 14:19:46 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 14:19:46 Logger DEBUG: oldWin: CDwindow-F3299BB5-2B9C-024D-122E-509E45E9D137
+23/12/2013 14:19:51 Logger DEBUG: newWin: CDwindow-46DD47A3-C35F-0581-4089-B01138FACF06
+23/12/2013 14:19:52 Logger DEBUG: Current Url: https://staging-agent.electricimp.com/ClNeFmPtloq2
+23/12/2013 14:19:52 Logger DEBUG: got inputAddr: st_expectedUrl
+23/12/2013 14:19:52 Logger DEBUG: got input data: agent.electricimp.com
+23/12/2013 14:19:52 Logger DEBUG: expected Url: agent.electricimp.com
+23/12/2013 14:19:52 Logger DEBUG: url OK
+23/12/2013 14:19:57 Logger DEBUG: model 2: Mod7ST
+23/12/2013 14:19:58 Logger DEBUG: device path: //ul[@id='model-list-container']/li[2]/ul/li/div
+23/12/2013 14:19:58 Logger DEBUG: number of devices: 1
+23/12/2013 14:19:58 Logger DEBUG: device 1: 23555eeb6e4936ee
+23/12/2013 14:20:01 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 14:20:01 Logger DEBUG: oldWin: CDwindow-F3299BB5-2B9C-024D-122E-509E45E9D137
+23/12/2013 14:20:06 Logger DEBUG: newWin: CDwindow-5FEF9F9A-0CB5-6F6C-5670-3D61DAC6AD65
+23/12/2013 14:20:07 Logger DEBUG: Current Url: https://staging-agent.electricimp.com/1svCcb9AzxAR
+23/12/2013 14:20:07 Logger DEBUG: got inputAddr: st_expectedUrl
+23/12/2013 14:20:07 Logger DEBUG: got input data: agent.electricimp.com
+23/12/2013 14:20:07 Logger DEBUG: expected Url: agent.electricimp.com
+23/12/2013 14:20:07 Logger DEBUG: url OK
+23/12/2013 14:20:12 Logger DEBUG: exiting sidebarTest()
+23/12/2013 14:20:12 Logger DEBUG: Entering afterTest()
+23/12/2013 14:20:18 Logger DEBUG: Exiting afterTest()
+23/12/2013 14:20:18 Logger DEBUG: Entering quit()
+23/12/2013 14:20:19 Logger DEBUG: Entering quit()
+23/12/2013 16:04:51 Logger 
+23/12/2013 16:04:51 Logger 
+23/12/2013 16:04:51 Logger ====================== Start Logging======================
+23/12/2013 16:10:08 Logger 
+23/12/2013 16:10:08 Logger 
+23/12/2013 16:10:08 Logger ====================== Start Logging======================
+23/12/2013 16:14:23 Logger 
+23/12/2013 16:14:23 Logger 
+23/12/2013 16:14:23 Logger ====================== Start Logging======================
+23/12/2013 16:14:23 Logger DEBUG: system type: ST
+23/12/2013 16:14:23 Logger DEBUG: Staging: ST
+23/12/2013 16:14:23 Logger DEBUG: Production: PR
+23/12/2013 16:14:23 Logger DEBUG: st_prefix: st_
+23/12/2013 16:14:23 Logger DEBUG: pr_prefix: pr_
+23/12/2013 16:14:23 Logger DEBUG: got inputAddr: st_browserType
+23/12/2013 16:14:23 Logger DEBUG: got input data: CH
+23/12/2013 16:14:23 Logger DEBUG: got browser type: CH
+23/12/2013 16:14:23 Logger DEBUG: got inputAddr: st_chromeDriverPath
+23/12/2013 16:14:23 Logger DEBUG: got input data: //Users//joechou//Downloads//chromedriver
+23/12/2013 16:14:23 Logger DEBUG: got chrome driver path: //Users//joechou//Downloads//chromedriver
+23/12/2013 16:14:25 Logger DEBUG:  entering loginTest1()
+23/12/2013 16:14:25 Logger DEBUG: got inputAddr: st_testSiteUrl
+23/12/2013 16:14:25 Logger DEBUG: got input data: https://staging-imp:weshouldtestthiscarefully@staging-ide.electricimp.com
+23/12/2013 16:14:25 Logger DEBUG: got test url: https://staging-imp:weshouldtestthiscarefully@staging-ide.electricimp.com
+23/12/2013 16:14:26 Logger DEBUG: got inputAddr: st_uname
+23/12/2013 16:14:26 Logger DEBUG: got input data: tester_Joe
+23/12/2013 16:14:26 Logger DEBUG: got inputAddr: st_pword
+23/12/2013 16:14:26 Logger DEBUG: got input data: renzhen1
+23/12/2013 16:14:26 Logger DEBUG:  login user name: tester_Joe, password: renzhen1=======
+23/12/2013 16:14:29 Logger DEBUG:  page title: Electric Imp - IDE - staging=======
+23/12/2013 16:14:30 Logger DEBUG: exiting loginTest1()
+23/12/2013 16:14:30 Logger DEBUG: Entering addFIMpTest()
+23/12/2013 16:14:35 Logger DEBUG: got number of elements: 1
+23/12/2013 16:14:35 Logger DEBUG: target factory imp already added
+23/12/2013 16:14:35 Logger DEBUG: Entering addWebhookTest()
+23/12/2013 16:14:37 Logger DEBUG: should be on IDE page, going there
+23/12/2013 16:14:43 Logger DEBUG: got inputAddr: st_webhookUrl
+23/12/2013 16:14:43 Logger DEBUG: got input data: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 16:14:43 Logger DEBUG: got test webhook URL: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 16:14:44 Logger DEBUG: number of elements: 0
+23/12/2013 16:14:45 Logger DEBUG: select option size: 2
+23/12/2013 16:14:46 Logger DEBUG: select option size: 3
+23/12/2013 16:14:47 Logger DEBUG: action result: Success The webhooks have been updated for this model!
+23/12/2013 16:14:47 Logger DEBUG: number of elements: 1
+23/12/2013 16:14:47 Logger DEBUG: got number of webhooks: 1
+23/12/2013 16:14:47 Logger DEBUG: got text: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 16:14:50 Logger DEBUG: Exiting addWebhookTest()
+23/12/2013 16:14:50 Logger DEBUG: entering agentServerTest()
+23/12/2013 16:14:52 Logger DEBUG: should be on IDE page, going there
+23/12/2013 16:14:57 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 16:14:57 Logger DEBUG: oldWin: CDwindow-A0AAE828-0449-48E9-EEFB-04969396FC57
+23/12/2013 16:15:02 Logger DEBUG: newWin: CDwindow-AF4EDE1D-5936-3DDD-F6CE-936BF65C1291
+23/12/2013 16:15:03 Logger DEBUG: response text: No HTTP Handler
+23/12/2013 16:15:04 Logger DEBUG: Entering assignModelTest()
+23/12/2013 16:15:07 Logger DEBUG: got inputAddr: st_newDevId
+23/12/2013 16:15:07 Logger DEBUG: got input data: 235699b236a7c9ee
+23/12/2013 16:15:08 Logger DEBUG: number of elements: 0
+23/12/2013 16:15:08 Logger ERROR: failed to find required device in new device, id:235699b236a7c9ee
+23/12/2013 16:15:08 Logger DEBUG: entering changeFWTest()
+23/12/2013 16:15:12 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 16:15:14 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 16:15:21 Logger DEBUG: select option size: 2
+23/12/2013 16:15:22 Logger DEBUG: action result: Success The associated firmware with this model has been updated!
+23/12/2013 16:15:25 Logger DEBUG: exiting changeFWTest()
+23/12/2013 16:15:25 Logger DEBUG: entering deleteDevTest()
+23/12/2013 16:15:27 Logger DEBUG: should be on IDE page, going there
+23/12/2013 16:15:31 Logger DEBUG: got inputAddr: st_newModName
+23/12/2013 16:15:31 Logger DEBUG: got input data: DelMod2
+23/12/2013 16:15:31 Logger DEBUG: got target model name: DelMod2
+23/12/2013 16:15:31 Logger DEBUG: number of models: 6
+23/12/2013 16:15:31 Logger DEBUG: model path: //ul[@id='model-list-container']/li[ i ]/div
+23/12/2013 16:15:31 Logger DEBUG: got model 1  title: FWMod1
+23/12/2013 16:15:31 Logger DEBUG: got model 2  title: Mod7ST
+23/12/2013 16:15:31 Logger DEBUG: got model 3  title: ModJoe3
+23/12/2013 16:15:31 Logger DEBUG: got model 4  title: ModJoe8
+23/12/2013 16:15:31 Logger DEBUG: got model 5  title: modTem1
+23/12/2013 16:15:31 Logger DEBUG: got model 6  title: ProdMod1
+23/12/2013 16:15:31 Logger DEBUG: no model of device to be deleted
+23/12/2013 16:15:31 Logger DEBUG: Entering deleteFIMpTest()
+23/12/2013 16:15:38 Logger DEBUG: got number of elements: 2
+23/12/2013 16:15:39 Logger DEBUG: action result: Success The webhooks have been updated for this model!
+23/12/2013 16:15:39 Logger DEBUG: entering opsDeployTest()
+23/12/2013 16:15:41 Logger DEBUG: should be on IDE page, going there
+23/12/2013 16:15:44 Logger DEBUG: Entering rmBondTest()
+23/12/2013 16:15:47 Logger DEBUG: got inputAddr: st_rmDevId
+23/12/2013 16:15:47 Logger DEBUG: got input data: 23dummyDevId
+23/12/2013 16:15:47 Logger DEBUG: got rmDevId: 23dummyDevId
+23/12/2013 16:15:47 Logger DEBUG: got inputAddr: st_rmBondPW
+23/12/2013 16:15:47 Logger DEBUG: got input data: dummyPassword
+23/12/2013 16:15:47 Logger DEBUG: got rmBondPW: dummyPassword
+23/12/2013 16:15:52 Logger DEBUG: action result: Error Invalid Credentials
+23/12/2013 16:15:55 Logger DEBUG: Exiting rmBondTest()
+23/12/2013 16:15:55 Logger DEBUG: Entering rmWebhookTest()
+23/12/2013 16:15:57 Logger DEBUG: should be on IDE page, going there
+23/12/2013 16:16:02 Logger DEBUG: got inputAddr: st_webhookUrl
+23/12/2013 16:16:02 Logger DEBUG: got input data: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 16:16:02 Logger DEBUG: got webhook URL: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 16:16:03 Logger DEBUG: number of elements: 0
+23/12/2013 16:16:03 Logger DEBUG: webhook not exist, no deleting.
+23/12/2013 16:16:03 Logger DEBUG: entering searchTest()
+23/12/2013 16:16:05 Logger DEBUG: should be on IDE page, going there
+23/12/2013 16:16:09 Logger DEBUG: got inputAddr: st_searchKey1
+23/12/2013 16:16:09 Logger DEBUG: got input data: 23
+23/12/2013 16:16:09 Logger DEBUG:  searchText: 23======================================
+23/12/2013 16:16:09 Logger DEBUG: sleeping for 2000 ms
+23/12/2013 16:16:11 Logger DEBUG: got number of elements: 2
+23/12/2013 16:16:11 Logger DEBUG: number of new devices found: 2
+23/12/2013 16:16:11 Logger DEBUG: got new devices addr: //div[@class='search-results-new-devices']/div[1]
+23/12/2013 16:16:13 Logger DEBUG: got new devices addr: //div[@class='search-results-new-devices']/div[2]
+23/12/2013 16:16:15 Logger DEBUG: got number of elements: 7
+23/12/2013 16:16:15 Logger DEBUG: number of model devices found: 7
+23/12/2013 16:16:15 Logger DEBUG: max number of model devices allowed (for now): 2
+23/12/2013 16:16:15 Logger DEBUG: got model devices addr: //div[@class='search-results-models']/div[1]
+23/12/2013 16:16:16 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 16:16:17 Logger DEBUG: oldWin: CDwindow-A0AAE828-0449-48E9-EEFB-04969396FC57
+23/12/2013 16:16:23 Logger DEBUG: newWin: CDwindow-19DC4A78-7F78-861A-B83E-2C2E09B1B750
+23/12/2013 16:16:24 Logger DEBUG: Current Url: https://staging-agent.electricimp.com/ClNeFmPtloq2
+23/12/2013 16:16:24 Logger DEBUG: got inputAddr: st_expectedUrl
+23/12/2013 16:16:24 Logger DEBUG: got input data: agent.electricimp.com
+23/12/2013 16:16:24 Logger DEBUG: expected Url: agent.electricimp.com
+23/12/2013 16:16:24 Logger DEBUG: url OK
+23/12/2013 16:16:25 Logger DEBUG: got model devices addr: //div[@class='search-results-models']/div[2]
+23/12/2013 16:16:26 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 16:16:27 Logger DEBUG: oldWin: CDwindow-A0AAE828-0449-48E9-EEFB-04969396FC57
+23/12/2013 16:16:33 Logger DEBUG: newWin: CDwindow-DC982969-C7EA-D858-0C67-F77EE5A8AE01
+23/12/2013 16:16:34 Logger DEBUG: Current Url: https://staging-agent.electricimp.com/1svCcb9AzxAR
+23/12/2013 16:16:34 Logger DEBUG: got inputAddr: st_expectedUrl
+23/12/2013 16:16:34 Logger DEBUG: got input data: agent.electricimp.com
+23/12/2013 16:16:34 Logger DEBUG: expected Url: agent.electricimp.com
+23/12/2013 16:16:34 Logger DEBUG: url OK
+23/12/2013 16:16:38 Logger DEBUG: exiting searchTest()
+23/12/2013 16:16:38 Logger DEBUG: entering sidebarTest()
+23/12/2013 16:16:40 Logger DEBUG: number of models: 6
+23/12/2013 16:16:40 Logger DEBUG: max number of models allowed(for now): 2
+23/12/2013 16:16:40 Logger DEBUG: model path: //ul[@id='model-list-container']/li[ i ]/div
+23/12/2013 16:16:40 Logger DEBUG: model 1: FWMod1
+23/12/2013 16:16:41 Logger DEBUG: device path: //ul[@id='model-list-container']/li[1]/ul/li/div
+23/12/2013 16:16:41 Logger DEBUG: number of devices: 1
+23/12/2013 16:16:41 Logger DEBUG: device 1: FWDev1
+23/12/2013 16:16:43 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 16:16:43 Logger DEBUG: oldWin: CDwindow-A0AAE828-0449-48E9-EEFB-04969396FC57
+23/12/2013 16:16:48 Logger DEBUG: newWin: CDwindow-0DA77E39-6CFA-C1D0-11D9-3219A4980C9B
+23/12/2013 16:16:49 Logger DEBUG: Current Url: https://staging-agent.electricimp.com/ClNeFmPtloq2
+23/12/2013 16:16:49 Logger DEBUG: got inputAddr: st_expectedUrl
+23/12/2013 16:16:49 Logger DEBUG: got input data: agent.electricimp.com
+23/12/2013 16:16:49 Logger DEBUG: expected Url: agent.electricimp.com
+23/12/2013 16:16:49 Logger DEBUG: url OK
+23/12/2013 16:16:53 Logger DEBUG: model 2: Mod7ST
+23/12/2013 16:16:54 Logger DEBUG: device path: //ul[@id='model-list-container']/li[2]/ul/li/div
+23/12/2013 16:16:54 Logger DEBUG: number of devices: 1
+23/12/2013 16:16:54 Logger DEBUG: device 1: 23555eeb6e4936ee
+23/12/2013 16:16:56 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 16:16:56 Logger DEBUG: oldWin: CDwindow-A0AAE828-0449-48E9-EEFB-04969396FC57
+23/12/2013 16:17:01 Logger DEBUG: newWin: CDwindow-A03DD7E6-9639-D22B-1D26-FFF5094FEF96
+23/12/2013 16:17:02 Logger DEBUG: Current Url: https://staging-agent.electricimp.com/1svCcb9AzxAR
+23/12/2013 16:17:02 Logger DEBUG: got inputAddr: st_expectedUrl
+23/12/2013 16:17:02 Logger DEBUG: got input data: agent.electricimp.com
+23/12/2013 16:17:02 Logger DEBUG: expected Url: agent.electricimp.com
+23/12/2013 16:17:02 Logger DEBUG: url OK
+23/12/2013 16:17:06 Logger DEBUG: exiting sidebarTest()
+23/12/2013 16:17:06 Logger DEBUG: Entering afterTest()
+23/12/2013 16:17:11 Logger DEBUG: Exiting afterTest()
+23/12/2013 16:17:11 Logger DEBUG: Entering quit()
+23/12/2013 16:17:11 Logger DEBUG: Entering quit()
+23/12/2013 17:18:24 Logger 
+23/12/2013 17:18:24 Logger 
+23/12/2013 17:18:24 Logger ====================== Start Logging======================
+23/12/2013 17:18:24 Logger DEBUG: system type: ST
+23/12/2013 17:18:24 Logger DEBUG: Staging: ST
+23/12/2013 17:18:24 Logger DEBUG: Production: PR
+23/12/2013 17:18:24 Logger DEBUG: st_prefix: st_
+23/12/2013 17:18:24 Logger DEBUG: pr_prefix: pr_
+23/12/2013 17:18:24 Logger DEBUG: got inputAddr: st_browserType
+23/12/2013 17:18:24 Logger DEBUG: got input data: CH
+23/12/2013 17:18:24 Logger DEBUG: got browser type: CH
+23/12/2013 17:18:24 Logger DEBUG: got inputAddr: st_chromeDriverPath
+23/12/2013 17:18:24 Logger DEBUG: got input data: //Users//joechou//Downloads//chromedriver
+23/12/2013 17:18:24 Logger DEBUG: got chrome driver path: //Users//joechou//Downloads//chromedriver
+23/12/2013 17:18:26 Logger DEBUG:  entering loginTest1()
+23/12/2013 17:18:26 Logger DEBUG: got inputAddr: st_testSiteUrl
+23/12/2013 17:18:26 Logger DEBUG: got input data: https://staging-imp:weshouldtestthiscarefully@staging-ide.electricimp.com
+23/12/2013 17:18:26 Logger DEBUG: got test url: https://staging-imp:weshouldtestthiscarefully@staging-ide.electricimp.com
+23/12/2013 17:18:27 Logger DEBUG: got inputAddr: st_uname
+23/12/2013 17:18:27 Logger DEBUG: got input data: tester_Joe
+23/12/2013 17:18:27 Logger DEBUG: got inputAddr: st_pword
+23/12/2013 17:18:27 Logger DEBUG: got input data: renzhen1
+23/12/2013 17:18:27 Logger DEBUG:  login user name: tester_Joe, password: renzhen1=======
+23/12/2013 17:18:30 Logger DEBUG:  page title: Electric Imp - IDE - staging=======
+23/12/2013 17:18:31 Logger DEBUG: exiting loginTest1()
+23/12/2013 17:18:31 Logger DEBUG: Entering addFIMpTest()
+23/12/2013 17:18:36 Logger DEBUG: got number of elements: 1
+23/12/2013 17:18:36 Logger DEBUG: target factory imp already added
+23/12/2013 17:18:36 Logger DEBUG: Entering addWebhookTest()
+23/12/2013 17:18:38 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:18:44 Logger DEBUG: got inputAddr: st_webhookUrl
+23/12/2013 17:18:44 Logger DEBUG: got input data: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 17:18:44 Logger DEBUG: got test webhook URL: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 17:18:45 Logger DEBUG: number of elements: 0
+23/12/2013 17:18:46 Logger DEBUG: select option size: 2
+23/12/2013 17:18:47 Logger DEBUG: select option size: 3
+23/12/2013 17:18:48 Logger DEBUG: action result: Success The webhooks have been updated for this model!
+23/12/2013 17:18:48 Logger DEBUG: number of elements: 1
+23/12/2013 17:18:48 Logger DEBUG: got number of webhooks: 1
+23/12/2013 17:18:48 Logger DEBUG: got text: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 17:18:51 Logger DEBUG: Exiting addWebhookTest()
+23/12/2013 17:18:51 Logger DEBUG: Entering assignModelTest()
+23/12/2013 17:18:53 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:18:56 Logger DEBUG: got inputAddr: st_newDevId
+23/12/2013 17:18:56 Logger DEBUG: got input data: 235699b236a7c9ee
+23/12/2013 17:18:57 Logger DEBUG: number of elements: 0
+23/12/2013 17:18:57 Logger ERROR: failed to find required device in new device, id:235699b236a7c9ee
+23/12/2013 17:18:57 Logger DEBUG: entering changeFWTest()
+23/12/2013 17:19:01 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 17:19:03 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 17:19:10 Logger DEBUG: select option size: 2
+23/12/2013 17:19:11 Logger DEBUG: action result: Success The associated firmware with this model has been updated!
+23/12/2013 17:19:14 Logger DEBUG: exiting changeFWTest()
+23/12/2013 17:19:14 Logger DEBUG: entering deleteDevTest()
+23/12/2013 17:19:16 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:19:19 Logger DEBUG: got inputAddr: st_newModName
+23/12/2013 17:19:19 Logger DEBUG: got input data: DelMod2
+23/12/2013 17:19:19 Logger DEBUG: got target model name: DelMod2
+23/12/2013 17:19:19 Logger DEBUG: number of models: 6
+23/12/2013 17:19:19 Logger DEBUG: model path: //ul[@id='model-list-container']/li[ i ]/div
+23/12/2013 17:19:19 Logger DEBUG: got model 1  title: FWMod1
+23/12/2013 17:19:20 Logger DEBUG: got model 2  title: Mod7ST
+23/12/2013 17:19:20 Logger DEBUG: got model 3  title: ModJoe3
+23/12/2013 17:19:20 Logger DEBUG: got model 4  title: ModJoe8
+23/12/2013 17:19:20 Logger DEBUG: got model 5  title: modTem1
+23/12/2013 17:19:20 Logger DEBUG: got model 6  title: ProdMod1
+23/12/2013 17:19:20 Logger DEBUG: no model of device to be deleted
+23/12/2013 17:19:20 Logger DEBUG: Entering deleteFIMpTest()
+23/12/2013 17:19:27 Logger DEBUG: got number of elements: 2
+23/12/2013 17:19:28 Logger DEBUG: action result: Success The webhooks have been updated for this model!
+23/12/2013 17:19:28 Logger DEBUG: entering opsDeployTest()
+23/12/2013 17:19:30 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:19:34 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 17:19:35 Logger DEBUG: got build number string: Build 235
+23/12/2013 17:19:35 Logger DEBUG: got build number: 235
+23/12/2013 17:19:35 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 17:19:35 Logger Taking 5 seconds break before clicking Operations button
+23/12/2013 17:19:42 Logger DEBUG: got staged build number: 235
+23/12/2013 17:19:44 Logger DEBUG: got deploy result: Success Your model has been deployed!
+23/12/2013 17:19:44 Logger DEBUG: got deployed build number: 235
+23/12/2013 17:19:47 Logger DEBUG: exiting opsDeployTest()
+23/12/2013 17:19:47 Logger DEBUG: Entering rmBondTest()
+23/12/2013 17:19:49 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:19:52 Logger DEBUG: got inputAddr: st_rmDevId
+23/12/2013 17:19:52 Logger DEBUG: got input data: 23dummyDevId
+23/12/2013 17:19:52 Logger DEBUG: got rmDevId: 23dummyDevId
+23/12/2013 17:19:52 Logger DEBUG: got inputAddr: st_rmBondPW
+23/12/2013 17:19:52 Logger DEBUG: got input data: dummyPassword
+23/12/2013 17:19:52 Logger DEBUG: got rmBondPW: dummyPassword
+23/12/2013 17:19:56 Logger DEBUG: action result: Error Invalid Credentials
+23/12/2013 17:19:59 Logger DEBUG: Exiting rmBondTest()
+23/12/2013 17:19:59 Logger DEBUG: Entering rmWebhookTest()
+23/12/2013 17:20:01 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:20:07 Logger DEBUG: got inputAddr: st_webhookUrl
+23/12/2013 17:20:07 Logger DEBUG: got input data: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 17:20:07 Logger DEBUG: got webhook URL: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 17:20:08 Logger DEBUG: number of elements: 0
+23/12/2013 17:20:08 Logger DEBUG: webhook not exist, no deleting.
+23/12/2013 17:20:08 Logger DEBUG: entering searchTest()
+23/12/2013 17:20:10 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:20:13 Logger DEBUG: got inputAddr: st_searchKey1
+23/12/2013 17:20:13 Logger DEBUG: got input data: 23
+23/12/2013 17:20:13 Logger DEBUG:  searchText: 23======================================
+23/12/2013 17:20:13 Logger DEBUG: sleeping for 2000 ms
+23/12/2013 17:20:15 Logger DEBUG: got number of elements: 2
+23/12/2013 17:20:15 Logger DEBUG: number of new devices found: 2
+23/12/2013 17:20:15 Logger DEBUG: got new devices addr: //div[@class='search-results-new-devices']/div[1]
+23/12/2013 17:20:17 Logger DEBUG: got new devices addr: //div[@class='search-results-new-devices']/div[2]
+23/12/2013 17:20:19 Logger DEBUG: got number of elements: 7
+23/12/2013 17:20:19 Logger DEBUG: number of model devices found: 7
+23/12/2013 17:20:19 Logger DEBUG: max number of model devices allowed (for now): 2
+23/12/2013 17:20:19 Logger DEBUG: got model devices addr: //div[@class='search-results-models']/div[1]
+23/12/2013 17:20:20 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 17:20:21 Logger DEBUG: oldWin: CDwindow-5C42E4D5-7D3A-C076-E319-A4A391975F88
+23/12/2013 17:20:27 Logger DEBUG: newWin: CDwindow-8662A173-F98D-7778-F07E-484FB501DBDF
+23/12/2013 17:20:28 Logger DEBUG: Current Url: https://staging-agent.electricimp.com/ClNeFmPtloq2
+23/12/2013 17:20:28 Logger DEBUG: got inputAddr: st_expectedUrl
+23/12/2013 17:20:28 Logger DEBUG: got input data: agent.electricimp.com
+23/12/2013 17:20:28 Logger DEBUG: expected Url: agent.electricimp.com
+23/12/2013 17:20:28 Logger DEBUG: url OK
+23/12/2013 17:20:29 Logger DEBUG: got model devices addr: //div[@class='search-results-models']/div[2]
+23/12/2013 17:20:31 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 17:20:32 Logger DEBUG: oldWin: CDwindow-5C42E4D5-7D3A-C076-E319-A4A391975F88
+23/12/2013 17:20:37 Logger DEBUG: newWin: CDwindow-C275CE68-D797-739E-ED5B-58541D46332B
+23/12/2013 17:20:38 Logger DEBUG: Current Url: https://staging-agent.electricimp.com/1svCcb9AzxAR
+23/12/2013 17:20:38 Logger DEBUG: got inputAddr: st_expectedUrl
+23/12/2013 17:20:38 Logger DEBUG: got input data: agent.electricimp.com
+23/12/2013 17:20:38 Logger DEBUG: expected Url: agent.electricimp.com
+23/12/2013 17:20:38 Logger DEBUG: url OK
+23/12/2013 17:20:42 Logger DEBUG: exiting searchTest()
+23/12/2013 17:20:42 Logger DEBUG: entering sidebarTest()
+23/12/2013 17:20:44 Logger DEBUG: number of models: 6
+23/12/2013 17:20:44 Logger DEBUG: max number of models allowed(for now): 2
+23/12/2013 17:20:44 Logger DEBUG: model path: //ul[@id='model-list-container']/li[ i ]/div
+23/12/2013 17:20:44 Logger DEBUG: model 1: FWMod1
+23/12/2013 17:20:45 Logger DEBUG: device path: //ul[@id='model-list-container']/li[1]/ul/li/div
+23/12/2013 17:20:45 Logger DEBUG: number of devices: 1
+23/12/2013 17:20:45 Logger DEBUG: device 1: FWDev1
+23/12/2013 17:20:47 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 17:20:47 Logger DEBUG: oldWin: CDwindow-5C42E4D5-7D3A-C076-E319-A4A391975F88
+23/12/2013 17:20:52 Logger DEBUG: newWin: CDwindow-3E3D2FC5-B2D2-B81E-443F-B782186D3A33
+23/12/2013 17:20:53 Logger DEBUG: Current Url: https://staging-agent.electricimp.com/ClNeFmPtloq2
+23/12/2013 17:20:53 Logger DEBUG: got inputAddr: st_expectedUrl
+23/12/2013 17:20:53 Logger DEBUG: got input data: agent.electricimp.com
+23/12/2013 17:20:53 Logger DEBUG: expected Url: agent.electricimp.com
+23/12/2013 17:20:53 Logger DEBUG: url OK
+23/12/2013 17:20:57 Logger DEBUG: model 2: Mod7ST
+23/12/2013 17:20:58 Logger DEBUG: device path: //ul[@id='model-list-container']/li[2]/ul/li/div
+23/12/2013 17:20:58 Logger DEBUG: number of devices: 1
+23/12/2013 17:20:58 Logger DEBUG: device 1: 23555eeb6e4936ee
+23/12/2013 17:21:00 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 17:21:00 Logger DEBUG: oldWin: CDwindow-5C42E4D5-7D3A-C076-E319-A4A391975F88
+23/12/2013 17:21:05 Logger DEBUG: newWin: CDwindow-0770956B-D806-D06B-4A05-425253BE5BAF
+23/12/2013 17:21:06 Logger DEBUG: Current Url: https://staging-agent.electricimp.com/1svCcb9AzxAR
+23/12/2013 17:21:06 Logger DEBUG: got inputAddr: st_expectedUrl
+23/12/2013 17:21:06 Logger DEBUG: got input data: agent.electricimp.com
+23/12/2013 17:21:06 Logger DEBUG: expected Url: agent.electricimp.com
+23/12/2013 17:21:06 Logger DEBUG: url OK
+23/12/2013 17:21:10 Logger DEBUG: exiting sidebarTest()
+23/12/2013 17:21:10 Logger DEBUG: Entering afterTest()
+23/12/2013 17:21:14 Logger DEBUG: Exiting afterTest()
+23/12/2013 17:21:14 Logger DEBUG: Entering agentEndpointTest()
+23/12/2013 17:21:14 Logger DEBUG: got inputAddr: st_agEndpointUrl
+23/12/2013 17:21:14 Logger DEBUG: got input data: null
+23/12/2013 17:21:14 Logger DEBUG: Entering quit()
+23/12/2013 17:21:15 Logger DEBUG: Entering quit()
+23/12/2013 17:21:15 Logger DEBUG: Entering close()
+23/12/2013 17:21:15 Logger DEBUG: Exiting close()
+23/12/2013 17:32:07 Logger 
+23/12/2013 17:32:07 Logger 
+23/12/2013 17:32:07 Logger ====================== Start Logging======================
+23/12/2013 17:32:07 Logger DEBUG: system type: PR
+23/12/2013 17:32:07 Logger DEBUG: Staging: ST
+23/12/2013 17:32:07 Logger DEBUG: Production: PR
+23/12/2013 17:32:07 Logger DEBUG: st_prefix: st_
+23/12/2013 17:32:07 Logger DEBUG: pr_prefix: pr_
+23/12/2013 17:32:07 Logger DEBUG: got inputAddr: pr_browserType
+23/12/2013 17:32:07 Logger DEBUG: got input data: CH
+23/12/2013 17:32:07 Logger DEBUG: got browser type: CH
+23/12/2013 17:32:07 Logger DEBUG: got inputAddr: pr_chromeDriverPath
+23/12/2013 17:32:07 Logger DEBUG: got input data: //Users//joechou//Downloads//chromedriver
+23/12/2013 17:32:07 Logger DEBUG: got chrome driver path: //Users//joechou//Downloads//chromedriver
+23/12/2013 17:32:09 Logger DEBUG:  entering loginTest1()
+23/12/2013 17:32:09 Logger DEBUG: got inputAddr: pr_testSiteUrl
+23/12/2013 17:32:09 Logger DEBUG: got input data: https://ide.electricimp.com
+23/12/2013 17:32:09 Logger DEBUG: got test url: https://ide.electricimp.com
+23/12/2013 17:32:10 Logger DEBUG: got inputAddr: pr_uname
+23/12/2013 17:32:10 Logger DEBUG: got input data: joechou1638
+23/12/2013 17:32:10 Logger DEBUG: got inputAddr: pr_pword
+23/12/2013 17:32:10 Logger DEBUG: got input data: renzhen1
+23/12/2013 17:32:10 Logger DEBUG:  login user name: joechou1638, password: renzhen1=======
+23/12/2013 17:32:12 Logger DEBUG:  page title: Electric Imp - IDE=======
+23/12/2013 17:32:13 Logger DEBUG: exiting loginTest1()
+23/12/2013 17:32:13 Logger DEBUG: Entering addFIMpTest()
+23/12/2013 17:32:19 Logger DEBUG: got number of elements: 1
+23/12/2013 17:32:19 Logger DEBUG: target factory imp already added
+23/12/2013 17:32:19 Logger DEBUG: Entering addWebhookTest()
+23/12/2013 17:32:21 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:32:26 Logger DEBUG: got inputAddr: pr_webhookUrl
+23/12/2013 17:32:26 Logger DEBUG: got input data: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 17:32:26 Logger DEBUG: got test webhook URL: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 17:32:27 Logger DEBUG: number of elements: 0
+23/12/2013 17:32:29 Logger DEBUG: select option size: 2
+23/12/2013 17:32:29 Logger DEBUG: select option size: 3
+23/12/2013 17:32:31 Logger DEBUG: action result: Success The webhooks have been updated for this model!
+23/12/2013 17:32:31 Logger DEBUG: number of elements: 1
+23/12/2013 17:32:31 Logger DEBUG: got number of webhooks: 1
+23/12/2013 17:32:31 Logger DEBUG: got text: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 17:32:34 Logger DEBUG: Exiting addWebhookTest()
+23/12/2013 17:32:34 Logger DEBUG: Entering assignModelTest()
+23/12/2013 17:32:36 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:32:39 Logger DEBUG: got inputAddr: pr_newDevId
+23/12/2013 17:32:39 Logger DEBUG: got input data: 237946eb6e4936ee
+23/12/2013 17:32:39 Logger DEBUG: number of elements: 1
+23/12/2013 17:32:39 Logger DEBUG: got device id: 2361c3eb6e4936ee
+23/12/2013 17:32:39 Logger ERROR: failed to find required device in new device, id:237946eb6e4936ee
+23/12/2013 17:32:39 Logger DEBUG: entering changeFWTest()
+23/12/2013 17:32:44 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 17:32:45 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 17:32:52 Logger DEBUG: select option size: 3
+23/12/2013 17:32:53 Logger DEBUG: action result: Success The associated firmware with this model has been updated!
+23/12/2013 17:32:56 Logger DEBUG: exiting changeFWTest()
+23/12/2013 17:32:56 Logger DEBUG: entering deleteDevTest()
+23/12/2013 17:32:58 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:33:02 Logger DEBUG: got inputAddr: pr_newModName
+23/12/2013 17:33:02 Logger DEBUG: got input data: DelMod2
+23/12/2013 17:33:02 Logger DEBUG: got target model name: DelMod2
+23/12/2013 17:33:02 Logger DEBUG: number of models: 5
+23/12/2013 17:33:02 Logger DEBUG: model path: //ul[@id='model-list-container']/li[ i ]/div
+23/12/2013 17:33:02 Logger DEBUG: got model 1  title: DelMod2
+23/12/2013 17:33:03 Logger DEBUG: got number of elements: 0
+23/12/2013 17:33:03 Logger DEBUG: no device to be deleted
+23/12/2013 17:33:03 Logger DEBUG: Entering deleteFIMpTest()
+23/12/2013 17:33:09 Logger DEBUG: got number of elements: 2
+23/12/2013 17:33:09 Logger DEBUG: action result: Success The webhooks have been updated for this model!
+23/12/2013 17:33:09 Logger DEBUG: got number of elements: 1
+23/12/2013 17:33:09 Logger DEBUG: entering opsDeployTest()
+23/12/2013 17:33:11 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:33:16 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 17:33:16 Logger DEBUG: got build number string: Build 121
+23/12/2013 17:33:16 Logger DEBUG: got build number: 121
+23/12/2013 17:33:16 Logger DEBUG: action result: Success: This model has been promoted to the Ops Panel.
+23/12/2013 17:33:16 Logger Taking 5 seconds break before clicking Operations button
+23/12/2013 17:33:23 Logger DEBUG: got staged build number: 121
+23/12/2013 17:33:25 Logger DEBUG: got deploy result: Success Your model has been deployed!
+23/12/2013 17:33:25 Logger DEBUG: got deployed build number: 121
+23/12/2013 17:33:28 Logger DEBUG: exiting opsDeployTest()
+23/12/2013 17:33:28 Logger DEBUG: Entering rmBondTest()
+23/12/2013 17:33:30 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:33:34 Logger DEBUG: got inputAddr: pr_rmDevId
+23/12/2013 17:33:34 Logger DEBUG: got input data: 23dummyDevId
+23/12/2013 17:33:34 Logger DEBUG: got rmDevId: 23dummyDevId
+23/12/2013 17:33:34 Logger DEBUG: got inputAddr: pr_rmBondPW
+23/12/2013 17:33:34 Logger DEBUG: got input data: dummyPassword
+23/12/2013 17:33:34 Logger DEBUG: got rmBondPW: dummyPassword
+23/12/2013 17:33:38 Logger DEBUG: action result: Error Invalid Credentials
+23/12/2013 17:33:41 Logger DEBUG: Exiting rmBondTest()
+23/12/2013 17:33:41 Logger DEBUG: Entering rmWebhookTest()
+23/12/2013 17:33:43 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:33:48 Logger DEBUG: got inputAddr: pr_webhookUrl
+23/12/2013 17:33:48 Logger DEBUG: got input data: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 17:33:48 Logger DEBUG: got webhook URL: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 17:33:50 Logger DEBUG: number of elements: 0
+23/12/2013 17:33:50 Logger DEBUG: webhook not exist, no deleting.
+23/12/2013 17:33:50 Logger DEBUG: entering searchTest()
+23/12/2013 17:33:52 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:33:55 Logger DEBUG: got inputAddr: pr_searchKey1
+23/12/2013 17:33:55 Logger DEBUG: got input data: 23
+23/12/2013 17:33:55 Logger DEBUG:  searchText: 23======================================
+23/12/2013 17:33:55 Logger DEBUG: sleeping for 2000 ms
+23/12/2013 17:33:57 Logger DEBUG: got number of elements: 1
+23/12/2013 17:33:57 Logger DEBUG: number of new devices found: 1
+23/12/2013 17:33:57 Logger DEBUG: got new devices addr: //div[@class='search-results-new-devices']/div[1]
+23/12/2013 17:33:59 Logger DEBUG: got number of elements: 5
+23/12/2013 17:33:59 Logger DEBUG: number of model devices found: 5
+23/12/2013 17:33:59 Logger DEBUG: max number of model devices allowed (for now): 2
+23/12/2013 17:33:59 Logger DEBUG: got model devices addr: //div[@class='search-results-models']/div[1]
+23/12/2013 17:34:01 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 17:34:02 Logger DEBUG: oldWin: CDwindow-923BA002-8FCF-90F3-BB6B-6493547C0744
+23/12/2013 17:34:07 Logger DEBUG: newWin: CDwindow-5CD8B7DC-B1DD-CE0D-195D-25CDDD29B79A
+23/12/2013 17:34:08 Logger DEBUG: Current Url: https://agent.electricimp.com/16Ma9ddToBlo
+23/12/2013 17:34:08 Logger DEBUG: got inputAddr: pr_expectedUrl
+23/12/2013 17:34:08 Logger DEBUG: got input data: agent.electricimp.com
+23/12/2013 17:34:08 Logger DEBUG: expected Url: agent.electricimp.com
+23/12/2013 17:34:08 Logger DEBUG: url OK
+23/12/2013 17:34:09 Logger DEBUG: got model devices addr: //div[@class='search-results-models']/div[2]
+23/12/2013 17:34:11 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 17:34:12 Logger DEBUG: oldWin: CDwindow-923BA002-8FCF-90F3-BB6B-6493547C0744
+23/12/2013 17:34:17 Logger DEBUG: newWin: CDwindow-7891BBF7-6D0D-9EE0-D879-909F09B0A36B
+23/12/2013 17:34:18 Logger DEBUG: Current Url: https://agent.electricimp.com/WH8yYeNlYwKx
+23/12/2013 17:34:18 Logger DEBUG: got inputAddr: pr_expectedUrl
+23/12/2013 17:34:18 Logger DEBUG: got input data: agent.electricimp.com
+23/12/2013 17:34:18 Logger DEBUG: expected Url: agent.electricimp.com
+23/12/2013 17:34:18 Logger DEBUG: url OK
+23/12/2013 17:34:22 Logger DEBUG: exiting searchTest()
+23/12/2013 17:34:23 Logger DEBUG: entering sidebarTest()
+23/12/2013 17:34:25 Logger DEBUG: number of models: 5
+23/12/2013 17:34:25 Logger DEBUG: max number of models allowed(for now): 2
+23/12/2013 17:34:25 Logger DEBUG: model path: //ul[@id='model-list-container']/li[ i ]/div
+23/12/2013 17:34:25 Logger DEBUG: model 1: DelMod2
+23/12/2013 17:34:26 Logger DEBUG: device path: //ul[@id='model-list-container']/li[1]/ul/li/div
+23/12/2013 17:34:26 Logger DEBUG: number of devices: 1
+23/12/2013 17:34:26 Logger DEBUG: device 1: 237946eb6e4936ee
+23/12/2013 17:34:27 Logger DEBUG: Entering afterTest()
+23/12/2013 17:34:30 Logger DEBUG: Exiting afterTest()
+23/12/2013 17:34:30 Logger DEBUG: Entering agentEndpointTest()
+23/12/2013 17:34:30 Logger DEBUG: got inputAddr: pr_agEndpointUrl
+23/12/2013 17:34:30 Logger DEBUG: got input data: https://agent.electricimp.com/SPUBUw8wBOEZ/status
+23/12/2013 17:34:30 Logger DEBUG: got response text: last ping: 2013-12-23T23:45:19Z
+imp version: 
+agent version: 3350ffc - jenkins-ei-named-branch-1437 - Mon Dec 23 14:27:02 2013
+23/12/2013 17:34:30 Logger DEBUG: Exiting agentEndpointTest()
+23/12/2013 17:34:30 Logger DEBUG: Entering quit()
+23/12/2013 17:34:31 Logger DEBUG: Entering quit()
+23/12/2013 17:34:31 Logger DEBUG: Entering close()
+23/12/2013 17:34:31 Logger DEBUG: Exiting close()
+23/12/2013 17:47:07 Logger 
+23/12/2013 17:47:07 Logger 
+23/12/2013 17:47:07 Logger ====================== Start Logging======================
+23/12/2013 17:47:07 Logger DEBUG: system type: PR
+23/12/2013 17:47:07 Logger DEBUG: Staging: ST
+23/12/2013 17:47:07 Logger DEBUG: Production: PR
+23/12/2013 17:47:07 Logger DEBUG: st_prefix: st_
+23/12/2013 17:47:07 Logger DEBUG: pr_prefix: pr_
+23/12/2013 17:47:07 Logger DEBUG: got inputAddr: pr_browserType
+23/12/2013 17:47:07 Logger DEBUG: got input data: CH
+23/12/2013 17:47:07 Logger DEBUG: got browser type: CH
+23/12/2013 17:47:07 Logger DEBUG: got inputAddr: pr_chromeDriverPath
+23/12/2013 17:47:07 Logger DEBUG: got input data: //Users//joechou//Downloads//chromedriver
+23/12/2013 17:47:07 Logger DEBUG: got chrome driver path: //Users//joechou//Downloads//chromedriver
+23/12/2013 17:47:08 Logger DEBUG:  entering loginTest1()
+23/12/2013 17:47:08 Logger DEBUG: got inputAddr: pr_testSiteUrl
+23/12/2013 17:47:08 Logger DEBUG: got input data: https://ide.electricimp.com
+23/12/2013 17:47:08 Logger DEBUG: got test url: https://ide.electricimp.com
+23/12/2013 17:47:09 Logger DEBUG: got inputAddr: pr_uname
+23/12/2013 17:47:09 Logger DEBUG: got input data: joechou1638
+23/12/2013 17:47:09 Logger DEBUG: got inputAddr: pr_pword
+23/12/2013 17:47:09 Logger DEBUG: got input data: renzhen1
+23/12/2013 17:47:09 Logger DEBUG:  login user name: joechou1638, password: renzhen1=======
+23/12/2013 17:47:12 Logger DEBUG:  page title: Electric Imp - IDE=======
+23/12/2013 17:47:13 Logger DEBUG: exiting loginTest1()
+23/12/2013 17:47:13 Logger DEBUG: Entering addFIMpTest()
+23/12/2013 17:47:19 Logger DEBUG: got number of elements: 1
+23/12/2013 17:47:19 Logger DEBUG: target factory imp already added
+23/12/2013 17:47:19 Logger DEBUG: Entering addWebhookTest()
+23/12/2013 17:47:21 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:47:26 Logger DEBUG: got inputAddr: pr_webhookUrl
+23/12/2013 17:47:26 Logger DEBUG: got input data: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 17:47:26 Logger DEBUG: got test webhook URL: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 17:47:27 Logger DEBUG: number of elements: 0
+23/12/2013 17:47:28 Logger DEBUG: select option size: 2
+23/12/2013 17:47:29 Logger DEBUG: select option size: 3
+23/12/2013 17:47:30 Logger DEBUG: action result: Success The webhooks have been updated for this model!
+23/12/2013 17:47:30 Logger DEBUG: number of elements: 1
+23/12/2013 17:47:30 Logger DEBUG: got number of webhooks: 1
+23/12/2013 17:47:30 Logger DEBUG: got text: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 17:47:33 Logger DEBUG: Exiting addWebhookTest()
+23/12/2013 17:47:33 Logger DEBUG: Entering assignModelTest()
+23/12/2013 17:47:35 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:47:39 Logger DEBUG: got inputAddr: pr_newDevId
+23/12/2013 17:47:39 Logger DEBUG: got input data: 237946eb6e4936ee
+23/12/2013 17:47:39 Logger DEBUG: number of elements: 1
+23/12/2013 17:47:39 Logger DEBUG: got device id: 2361c3eb6e4936ee
+23/12/2013 17:47:39 Logger ERROR: failed to find required device in new device, id:237946eb6e4936ee
+23/12/2013 17:47:39 Logger DEBUG: entering changeFWTest()
+23/12/2013 17:47:43 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 17:47:44 Logger DEBUG: action result: Success: This model has been promoted to the Ops Panel.
+23/12/2013 17:47:51 Logger DEBUG: select option size: 3
+23/12/2013 17:47:52 Logger DEBUG: action result: Success The associated firmware with this model has been updated!
+23/12/2013 17:47:55 Logger DEBUG: exiting changeFWTest()
+23/12/2013 17:47:55 Logger DEBUG: entering deleteDevTest()
+23/12/2013 17:47:57 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:48:00 Logger DEBUG: got inputAddr: pr_newModName
+23/12/2013 17:48:00 Logger DEBUG: got input data: DelMod2
+23/12/2013 17:48:00 Logger DEBUG: got target model name: DelMod2
+23/12/2013 17:48:00 Logger DEBUG: number of models: 5
+23/12/2013 17:48:00 Logger DEBUG: model path: //ul[@id='model-list-container']/li[ i ]/div
+23/12/2013 17:48:00 Logger DEBUG: got model 1  title: DelMod2
+23/12/2013 17:48:02 Logger DEBUG: got number of elements: 0
+23/12/2013 17:48:02 Logger DEBUG: no device to be deleted
+23/12/2013 17:48:02 Logger DEBUG: Entering deleteFIMpTest()
+23/12/2013 17:48:08 Logger DEBUG: got number of elements: 2
+23/12/2013 17:48:08 Logger DEBUG: action result: Success The webhooks have been updated for this model!
+23/12/2013 17:48:08 Logger DEBUG: got number of elements: 1
+23/12/2013 17:48:08 Logger DEBUG: entering opsDeployTest()
+23/12/2013 17:48:10 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:48:15 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 17:48:15 Logger DEBUG: got build number string: Build 122
+23/12/2013 17:48:15 Logger DEBUG: got build number: 122
+23/12/2013 17:48:15 Logger DEBUG: action result: Success: This model has been promoted to the Ops Panel.
+23/12/2013 17:48:15 Logger Taking 5 seconds break before clicking Operations button
+23/12/2013 17:48:22 Logger DEBUG: got staged build number: 122
+23/12/2013 17:48:24 Logger DEBUG: got deploy result: Success Your model has been deployed!
+23/12/2013 17:48:24 Logger DEBUG: got deployed build number: 122
+23/12/2013 17:48:27 Logger DEBUG: exiting opsDeployTest()
+23/12/2013 17:48:27 Logger DEBUG: Entering rmBondTest()
+23/12/2013 17:48:29 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:48:32 Logger DEBUG: got inputAddr: pr_rmDevId
+23/12/2013 17:48:32 Logger DEBUG: got input data: 23dummyDevId
+23/12/2013 17:48:32 Logger DEBUG: got rmDevId: 23dummyDevId
+23/12/2013 17:48:32 Logger DEBUG: got inputAddr: pr_rmBondPW
+23/12/2013 17:48:32 Logger DEBUG: got input data: dummyPassword
+23/12/2013 17:48:32 Logger DEBUG: got rmBondPW: dummyPassword
+23/12/2013 17:48:36 Logger DEBUG: action result: Error Invalid Credentials
+23/12/2013 17:48:39 Logger DEBUG: Exiting rmBondTest()
+23/12/2013 17:48:39 Logger DEBUG: Entering rmWebhookTest()
+23/12/2013 17:48:41 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:48:47 Logger DEBUG: got inputAddr: pr_webhookUrl
+23/12/2013 17:48:47 Logger DEBUG: got input data: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 17:48:47 Logger DEBUG: got webhook URL: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 17:48:48 Logger DEBUG: number of elements: 0
+23/12/2013 17:48:48 Logger DEBUG: webhook not exist, no deleting.
+23/12/2013 17:48:48 Logger DEBUG: entering searchTest()
+23/12/2013 17:48:50 Logger DEBUG: should be on IDE page, going there
+23/12/2013 17:48:53 Logger DEBUG: got inputAddr: pr_searchKey1
+23/12/2013 17:48:53 Logger DEBUG: got input data: 23
+23/12/2013 17:48:53 Logger DEBUG:  searchText: 23======================================
+23/12/2013 17:48:53 Logger DEBUG: sleeping for 2000 ms
+23/12/2013 17:48:55 Logger DEBUG: got number of elements: 1
+23/12/2013 17:48:55 Logger DEBUG: number of new devices found: 1
+23/12/2013 17:48:55 Logger DEBUG: got new devices addr: //div[@class='search-results-new-devices']/div[1]
+23/12/2013 17:48:57 Logger DEBUG: got number of elements: 5
+23/12/2013 17:48:57 Logger DEBUG: number of model devices found: 5
+23/12/2013 17:48:57 Logger DEBUG: max number of model devices allowed (for now): 2
+23/12/2013 17:48:57 Logger DEBUG: got model devices addr: //div[@class='search-results-models']/div[1]
+23/12/2013 17:48:59 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 17:49:00 Logger DEBUG: oldWin: CDwindow-1EE28953-74E1-11E4-BD3D-D079B667AE52
+23/12/2013 17:49:05 Logger DEBUG: newWin: CDwindow-55624545-E7F0-4E2B-5004-6286BFAFFFCD
+23/12/2013 17:49:06 Logger DEBUG: Current Url: https://agent.electricimp.com/16Ma9ddToBlo
+23/12/2013 17:49:06 Logger DEBUG: got inputAddr: pr_expectedUrl
+23/12/2013 17:49:06 Logger DEBUG: got input data: agent.electricimp.com
+23/12/2013 17:49:06 Logger DEBUG: expected Url: agent.electricimp.com
+23/12/2013 17:49:06 Logger DEBUG: url OK
+23/12/2013 17:49:07 Logger DEBUG: got model devices addr: //div[@class='search-results-models']/div[2]
+23/12/2013 17:49:09 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 17:49:10 Logger DEBUG: oldWin: CDwindow-1EE28953-74E1-11E4-BD3D-D079B667AE52
+23/12/2013 17:49:15 Logger DEBUG: newWin: CDwindow-9C609356-637F-3056-D62C-A1C663A117D9
+23/12/2013 17:49:16 Logger DEBUG: Current Url: https://agent.electricimp.com/WH8yYeNlYwKx
+23/12/2013 17:49:16 Logger DEBUG: got inputAddr: pr_expectedUrl
+23/12/2013 17:49:16 Logger DEBUG: got input data: agent.electricimp.com
+23/12/2013 17:49:16 Logger DEBUG: expected Url: agent.electricimp.com
+23/12/2013 17:49:16 Logger DEBUG: url OK
+23/12/2013 17:49:20 Logger DEBUG: exiting searchTest()
+23/12/2013 17:49:20 Logger DEBUG: entering sidebarTest()
+23/12/2013 17:49:22 Logger DEBUG: number of models: 5
+23/12/2013 17:49:22 Logger DEBUG: max number of models allowed(for now): 2
+23/12/2013 17:49:22 Logger DEBUG: model path: //ul[@id='model-list-container']/li[ i ]/div
+23/12/2013 17:49:22 Logger DEBUG: model 1: DelMod2
+23/12/2013 17:49:23 Logger DEBUG: device path: //ul[@id='model-list-container']/li[1]/ul/li/div
+23/12/2013 17:49:23 Logger DEBUG: number of devices: 1
+23/12/2013 17:49:23 Logger DEBUG: device 1: 237946eb6e4936ee
+23/12/2013 17:49:24 Logger DEBUG: Entering afterTest()
+23/12/2013 17:49:28 Logger DEBUG: Exiting afterTest()
+23/12/2013 17:49:28 Logger DEBUG: Entering agentEndpointTest()
+23/12/2013 17:49:28 Logger DEBUG: got inputAddr: pr_agEndpointUrl
+23/12/2013 17:49:28 Logger DEBUG: got input data: https://agent.electricimp.com/SPUBUw8wBOEZ/status
+23/12/2013 17:49:28 Logger DEBUG: got response text: last ping: 2013-12-23T23:45:19Z
+imp version: 
+agent version: 3350ffc - jenkins-ei-named-branch-1437 - Mon Dec 23 14:27:02 2013
+23/12/2013 17:49:28 Logger DEBUG: Exiting agentEndpointTest()
+23/12/2013 17:49:28 Logger DEBUG: Entering quit()
+23/12/2013 17:49:29 Logger DEBUG: Entering quit()
+23/12/2013 17:49:29 Logger DEBUG: Entering close()
+23/12/2013 17:49:29 Logger DEBUG: Exiting close()
+23/12/2013 18:11:45 Logger 
+23/12/2013 18:11:45 Logger 
+23/12/2013 18:11:45 Logger ====================== Start Logging======================
+23/12/2013 18:11:45 Logger DEBUG: system type: PR
+23/12/2013 18:11:45 Logger DEBUG: Staging: ST
+23/12/2013 18:11:45 Logger DEBUG: Production: PR
+23/12/2013 18:11:45 Logger DEBUG: st_prefix: st_
+23/12/2013 18:11:45 Logger DEBUG: pr_prefix: pr_
+23/12/2013 18:11:45 Logger DEBUG: got inputAddr: pr_browserType
+23/12/2013 18:11:45 Logger DEBUG: got input data: CH
+23/12/2013 18:11:45 Logger DEBUG: got browser type: CH
+23/12/2013 18:11:45 Logger DEBUG: got inputAddr: pr_chromeDriverPath
+23/12/2013 18:11:45 Logger DEBUG: got input data: //Users//joechou//Downloads//chromedriver
+23/12/2013 18:11:45 Logger DEBUG: got chrome driver path: //Users//joechou//Downloads//chromedriver
+23/12/2013 18:11:47 Logger DEBUG:  entering loginTest1()
+23/12/2013 18:11:47 Logger DEBUG: got inputAddr: pr_testSiteUrl
+23/12/2013 18:11:47 Logger DEBUG: got input data: https://ide.electricimp.com
+23/12/2013 18:11:47 Logger DEBUG: got test url: https://ide.electricimp.com
+23/12/2013 18:11:48 Logger DEBUG: got inputAddr: pr_uname
+23/12/2013 18:11:48 Logger DEBUG: got input data: joechou1638
+23/12/2013 18:11:48 Logger DEBUG: got inputAddr: pr_pword
+23/12/2013 18:11:48 Logger DEBUG: got input data: renzhen1
+23/12/2013 18:11:48 Logger DEBUG:  login user name: joechou1638, password: renzhen1=======
+23/12/2013 18:11:51 Logger DEBUG:  page title: Electric Imp - IDE=======
+23/12/2013 18:11:52 Logger DEBUG: exiting loginTest1()
+23/12/2013 18:11:52 Logger DEBUG: Entering addFIMpTest()
+23/12/2013 18:11:58 Logger DEBUG: got number of elements: 1
+23/12/2013 18:11:58 Logger DEBUG: target factory imp already added
+23/12/2013 18:11:58 Logger DEBUG: Entering addWebhookTest()
+23/12/2013 18:12:00 Logger DEBUG: should be on IDE page, going there
+23/12/2013 18:12:05 Logger DEBUG: got inputAddr: pr_webhookUrl
+23/12/2013 18:12:05 Logger DEBUG: got input data: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 18:12:05 Logger DEBUG: got test webhook URL: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 18:12:06 Logger DEBUG: number of elements: 0
+23/12/2013 18:12:07 Logger DEBUG: select option size: 2
+23/12/2013 18:12:08 Logger DEBUG: select option size: 3
+23/12/2013 18:12:09 Logger DEBUG: action result: Success The webhooks have been updated for this model!
+23/12/2013 18:12:09 Logger DEBUG: number of elements: 1
+23/12/2013 18:12:09 Logger DEBUG: got number of webhooks: 1
+23/12/2013 18:12:09 Logger DEBUG: got text: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 18:12:12 Logger DEBUG: Exiting addWebhookTest()
+23/12/2013 18:12:12 Logger DEBUG: Entering assignModelTest()
+23/12/2013 18:12:14 Logger DEBUG: should be on IDE page, going there
+23/12/2013 18:12:17 Logger DEBUG: got inputAddr: pr_newDevId
+23/12/2013 18:12:17 Logger DEBUG: got input data: 237946eb6e4936ee
+23/12/2013 18:12:17 Logger DEBUG: number of elements: 1
+23/12/2013 18:12:17 Logger DEBUG: got device id: 2361c3eb6e4936ee
+23/12/2013 18:12:17 Logger ERROR: failed to find required device in new device, id:237946eb6e4936ee
+23/12/2013 18:12:17 Logger DEBUG: entering changeFWTest()
+23/12/2013 18:12:21 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 18:12:23 Logger DEBUG: action result: Success: This model has been promoted to the Ops Panel.
+23/12/2013 18:12:30 Logger DEBUG: select option size: 3
+23/12/2013 18:12:31 Logger DEBUG: action result: Success The associated firmware with this model has been updated!
+23/12/2013 18:12:34 Logger DEBUG: exiting changeFWTest()
+23/12/2013 18:12:34 Logger DEBUG: entering deleteDevTest()
+23/12/2013 18:12:36 Logger DEBUG: should be on IDE page, going there
+23/12/2013 18:12:40 Logger DEBUG: got inputAddr: pr_newModName
+23/12/2013 18:12:40 Logger DEBUG: got input data: DelMod2
+23/12/2013 18:12:40 Logger DEBUG: got target model name: DelMod2
+23/12/2013 18:12:40 Logger DEBUG: number of models: 5
+23/12/2013 18:12:40 Logger DEBUG: model path: //ul[@id='model-list-container']/li[ i ]/div
+23/12/2013 18:12:40 Logger DEBUG: got model 1  title: DelMod2
+23/12/2013 18:12:41 Logger DEBUG: got number of elements: 0
+23/12/2013 18:12:41 Logger DEBUG: no device to be deleted
+23/12/2013 18:12:41 Logger DEBUG: Entering deleteFIMpTest()
+23/12/2013 18:12:47 Logger DEBUG: got number of elements: 2
+23/12/2013 18:12:48 Logger DEBUG: action result: Success The webhooks have been updated for this model!
+23/12/2013 18:12:48 Logger DEBUG: got number of elements: 1
+23/12/2013 18:12:48 Logger DEBUG: entering opsDeployTest()
+23/12/2013 18:12:50 Logger DEBUG: should be on IDE page, going there
+23/12/2013 18:12:54 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 18:12:54 Logger DEBUG: got build number string: Build 123
+23/12/2013 18:12:54 Logger DEBUG: got build number: 123
+23/12/2013 18:12:54 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 18:12:54 Logger Taking 5 seconds break before clicking Operations button
+23/12/2013 18:13:02 Logger DEBUG: got staged build number: 123
+23/12/2013 18:13:03 Logger DEBUG: got deploy result: Success Your model has been deployed!
+23/12/2013 18:13:03 Logger DEBUG: got deployed build number: 123
+23/12/2013 18:13:06 Logger DEBUG: exiting opsDeployTest()
+23/12/2013 18:13:06 Logger DEBUG: Entering rmBondTest()
+23/12/2013 18:13:08 Logger DEBUG: should be on IDE page, going there
+23/12/2013 18:13:12 Logger DEBUG: got inputAddr: pr_rmDevId
+23/12/2013 18:13:12 Logger DEBUG: got input data: 23dummyDevId
+23/12/2013 18:13:12 Logger DEBUG: got rmDevId: 23dummyDevId
+23/12/2013 18:13:12 Logger DEBUG: got inputAddr: pr_rmBondPW
+23/12/2013 18:13:12 Logger DEBUG: got input data: dummyPassword
+23/12/2013 18:13:12 Logger DEBUG: got rmBondPW: dummyPassword
+23/12/2013 18:13:16 Logger DEBUG: action result: Error Invalid Credentials
+23/12/2013 18:13:19 Logger DEBUG: Exiting rmBondTest()
+23/12/2013 18:13:19 Logger DEBUG: Entering rmWebhookTest()
+23/12/2013 18:13:21 Logger DEBUG: should be on IDE page, going there
+23/12/2013 18:13:26 Logger DEBUG: got inputAddr: pr_webhookUrl
+23/12/2013 18:13:26 Logger DEBUG: got input data: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 18:13:26 Logger DEBUG: got webhook URL: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 18:13:28 Logger DEBUG: number of elements: 0
+23/12/2013 18:13:28 Logger DEBUG: webhook not exist, no deleting.
+23/12/2013 18:13:28 Logger DEBUG: entering searchTest()
+23/12/2013 18:13:30 Logger DEBUG: should be on IDE page, going there
+23/12/2013 18:13:33 Logger DEBUG: got inputAddr: pr_searchKey1
+23/12/2013 18:13:33 Logger DEBUG: got input data: 23
+23/12/2013 18:13:33 Logger DEBUG:  searchText: 23======================================
+23/12/2013 18:13:33 Logger DEBUG: sleeping for 2000 ms
+23/12/2013 18:13:35 Logger DEBUG: got number of elements: 1
+23/12/2013 18:13:35 Logger DEBUG: number of new devices found: 1
+23/12/2013 18:13:35 Logger DEBUG: got new devices addr: //div[@class='search-results-new-devices']/div[1]
+23/12/2013 18:13:37 Logger DEBUG: got number of elements: 5
+23/12/2013 18:13:37 Logger DEBUG: number of model devices found: 5
+23/12/2013 18:13:37 Logger DEBUG: max number of model devices allowed (for now): 2
+23/12/2013 18:13:37 Logger DEBUG: got model devices addr: //div[@class='search-results-models']/div[1]
+23/12/2013 18:13:39 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 18:13:40 Logger DEBUG: oldWin: CDwindow-E1CA885F-5FBF-1ECE-E6F6-11ABFA7191ED
+23/12/2013 18:13:45 Logger DEBUG: newWin: CDwindow-FD1D62F2-47EE-0FD4-E60A-94D66F13C84B
+23/12/2013 18:13:46 Logger DEBUG: Current Url: https://agent.electricimp.com/16Ma9ddToBlo
+23/12/2013 18:13:46 Logger DEBUG: got inputAddr: pr_expectedUrl
+23/12/2013 18:13:46 Logger DEBUG: got input data: agent.electricimp.com
+23/12/2013 18:13:46 Logger DEBUG: expected Url: agent.electricimp.com
+23/12/2013 18:13:46 Logger DEBUG: url OK
+23/12/2013 18:13:47 Logger DEBUG: got model devices addr: //div[@class='search-results-models']/div[2]
+23/12/2013 18:13:49 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 18:13:50 Logger DEBUG: oldWin: CDwindow-E1CA885F-5FBF-1ECE-E6F6-11ABFA7191ED
+23/12/2013 18:13:55 Logger DEBUG: newWin: CDwindow-AB108C8F-59E8-0C43-D9CE-5BC4E70E1230
+23/12/2013 18:13:56 Logger DEBUG: Current Url: https://agent.electricimp.com/WH8yYeNlYwKx
+23/12/2013 18:13:56 Logger DEBUG: got inputAddr: pr_expectedUrl
+23/12/2013 18:13:56 Logger DEBUG: got input data: agent.electricimp.com
+23/12/2013 18:13:56 Logger DEBUG: expected Url: agent.electricimp.com
+23/12/2013 18:13:56 Logger DEBUG: url OK
+23/12/2013 18:14:01 Logger DEBUG: exiting searchTest()
+23/12/2013 18:14:01 Logger DEBUG: entering sidebarTest()
+23/12/2013 18:14:03 Logger DEBUG: number of models: 5
+23/12/2013 18:14:03 Logger DEBUG: max number of models allowed(for now): 2
+23/12/2013 18:14:03 Logger DEBUG: model path: //ul[@id='model-list-container']/li[ i ]/div
+23/12/2013 18:14:03 Logger DEBUG: model 1: DelMod2
+23/12/2013 18:14:04 Logger DEBUG: device path: //ul[@id='model-list-container']/li[1]/ul/li/div
+23/12/2013 18:14:04 Logger DEBUG: number of devices: 1
+23/12/2013 18:14:04 Logger DEBUG: device 1: 237946eb6e4936ee
+23/12/2013 18:14:05 Logger DEBUG: Entering afterTest()
+23/12/2013 18:14:08 Logger DEBUG: Exiting afterTest()
+23/12/2013 18:14:08 Logger DEBUG: Entering agentEndpointTest()
+23/12/2013 18:14:08 Logger DEBUG: got inputAddr: pr_agEndpointUrl
+23/12/2013 18:14:08 Logger DEBUG: got input data: https://agent.electricimp.com/SPUBUw8wBOEZ/status
+23/12/2013 18:14:08 Logger DEBUG: got response text: last ping: 2013-12-23T23:45:19Z
+imp version: 
+agent version: 3350ffc - jenkins-ei-named-branch-1437 - Mon Dec 23 14:27:02 2013
+23/12/2013 18:14:08 Logger DEBUG: Exiting agentEndpointTest()
+23/12/2013 18:14:08 Logger DEBUG: Entering quit()
+23/12/2013 18:14:09 Logger DEBUG: Entering quit()
+23/12/2013 18:14:09 Logger DEBUG: Entering close()
+23/12/2013 18:14:09 Logger DEBUG: Exiting close()
+23/12/2013 18:20:13 Logger 
+23/12/2013 18:20:13 Logger 
+23/12/2013 18:20:13 Logger ====================== Start Logging======================
+23/12/2013 18:20:13 Logger DEBUG: system type: PR
+23/12/2013 18:20:13 Logger DEBUG: Staging: ST
+23/12/2013 18:20:13 Logger DEBUG: Production: PR
+23/12/2013 18:20:13 Logger DEBUG: st_prefix: st_
+23/12/2013 18:20:13 Logger DEBUG: pr_prefix: pr_
+23/12/2013 18:20:13 Logger DEBUG: got inputAddr: pr_browserType
+23/12/2013 18:20:13 Logger DEBUG: got input data: CH
+23/12/2013 18:20:13 Logger DEBUG: got browser type: CH
+23/12/2013 18:20:13 Logger DEBUG: got inputAddr: pr_chromeDriverPath
+23/12/2013 18:20:13 Logger DEBUG: got input data: //Users//joechou//Downloads//chromedriver
+23/12/2013 18:20:13 Logger DEBUG: got chrome driver path: //Users//joechou//Downloads//chromedriver
+23/12/2013 18:20:15 Logger DEBUG:  entering loginTest1()
+23/12/2013 18:20:15 Logger DEBUG: got inputAddr: pr_testSiteUrl
+23/12/2013 18:20:15 Logger DEBUG: got input data: https://ide.electricimp.com
+23/12/2013 18:20:15 Logger DEBUG: got test url: https://ide.electricimp.com
+23/12/2013 18:20:16 Logger DEBUG: got inputAddr: pr_uname
+23/12/2013 18:20:16 Logger DEBUG: got input data: joechou1638
+23/12/2013 18:20:16 Logger DEBUG: got inputAddr: pr_pword
+23/12/2013 18:20:16 Logger DEBUG: got input data: renzhen1
+23/12/2013 18:20:16 Logger DEBUG:  login user name: joechou1638, password: renzhen1=======
+23/12/2013 18:20:18 Logger DEBUG:  page title: Electric Imp - IDE=======
+23/12/2013 18:20:19 Logger DEBUG: exiting loginTest1()
+23/12/2013 18:20:19 Logger DEBUG: Entering addFIMpTest()
+23/12/2013 18:20:25 Logger DEBUG: got number of elements: 1
+23/12/2013 18:20:25 Logger DEBUG: target factory imp already added
+23/12/2013 18:20:25 Logger DEBUG: Entering addWebhookTest()
+23/12/2013 18:20:27 Logger DEBUG: should be on IDE page, going there
+23/12/2013 18:20:32 Logger DEBUG: got inputAddr: pr_webhookUrl
+23/12/2013 18:20:32 Logger DEBUG: got input data: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 18:20:32 Logger DEBUG: got test webhook URL: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 18:20:34 Logger DEBUG: number of elements: 0
+23/12/2013 18:20:35 Logger DEBUG: select option size: 2
+23/12/2013 18:20:35 Logger DEBUG: select option size: 3
+23/12/2013 18:20:36 Logger DEBUG: action result: Success The webhooks have been updated for this model!
+23/12/2013 18:20:36 Logger DEBUG: number of elements: 1
+23/12/2013 18:20:36 Logger DEBUG: got number of webhooks: 1
+23/12/2013 18:20:36 Logger DEBUG: got text: https://ei-ide.firebaseio.com/testLog.json
+23/12/2013 18:20:39 Logger DEBUG: Exiting addWebhookTest()
+23/12/2013 18:20:40 Logger DEBUG: Entering assignModelTest()
+23/12/2013 18:20:42 Logger DEBUG: should be on IDE page, going there
+23/12/2013 18:20:45 Logger DEBUG: got inputAddr: pr_newDevId
+23/12/2013 18:20:45 Logger DEBUG: got input data: 237946eb6e4936ee
+23/12/2013 18:20:45 Logger DEBUG: number of elements: 1
+23/12/2013 18:20:45 Logger DEBUG: got device id: 2361c3eb6e4936ee
+23/12/2013 18:20:45 Logger ERROR: failed to find required device in new device, id:237946eb6e4936ee
+23/12/2013 18:20:45 Logger DEBUG: entering changeFWTest()
+23/12/2013 18:20:49 Logger DEBUG: action result: Success Your code is running!
+23/12/2013 18:20:50 Logger DEBUG: action result: Success: This model has been promoted to the Ops Panel.
+23/12/2013 18:20:57 Logger DEBUG: select option size: 3
+23/12/2013 18:20:59 Logger DEBUG: action result: Success The associated firmware with this model has been updated!
+23/12/2013 18:21:02 Logger DEBUG: exiting changeFWTest()
+23/12/2013 18:21:02 Logger DEBUG: entering deleteDevTest()
+23/12/2013 18:21:04 Logger DEBUG: should be on IDE page, going there
+23/12/2013 18:21:07 Logger DEBUG: got inputAddr: pr_newModName
+23/12/2013 18:21:07 Logger DEBUG: got input data: DelMod2
+23/12/2013 18:21:07 Logger DEBUG: got target model name: DelMod2
+23/12/2013 18:21:07 Logger DEBUG: number of models: 5
+23/12/2013 18:21:07 Logger DEBUG: model path: //ul[@id='model-list-container']/li[ i ]/div
+23/12/2013 18:21:07 Logger DEBUG: got model 1  title: DelMod2
+23/12/2013 18:21:08 Logger DEBUG: got number of elements: 0
+23/12/2013 18:21:08 Logger DEBUG: no device to be deleted
+23/12/2013 18:21:08 Logger DEBUG: Entering deleteFIMpTest()
+23/12/2013 18:21:45 Logger DEBUG: entering opsDeployTest()
+23/12/2013 18:21:47 Logger DEBUG: should be on IDE page, going there
+23/12/2013 18:22:17 Logger DEBUG: Entering rmBondTest()
+23/12/2013 18:22:19 Logger DEBUG: should be on IDE page, going there
+23/12/2013 18:22:49 Logger DEBUG: Entering rmWebhookTest()
+23/12/2013 18:22:51 Logger DEBUG: should be on IDE page, going there
+23/12/2013 18:23:21 Logger DEBUG: entering searchTest()
+23/12/2013 18:23:23 Logger DEBUG: should be on IDE page, going there
+23/12/2013 18:23:53 Logger DEBUG: entering sidebarTest()
+23/12/2013 18:24:25 Logger DEBUG: number of models: 0
+23/12/2013 18:24:25 Logger DEBUG: model path: //ul[@id='model-list-container']/li[ i ]/div
+23/12/2013 18:24:25 Logger DEBUG: exiting sidebarTest()
+23/12/2013 18:24:25 Logger DEBUG: Entering afterTest()
+23/12/2013 18:24:29 Logger DEBUG: Exiting afterTest()
+23/12/2013 18:24:29 Logger DEBUG: Entering agentEndpointTest()
+23/12/2013 18:24:29 Logger DEBUG: got inputAddr: pr_agEndpointUrl
+23/12/2013 18:24:29 Logger DEBUG: got input data: https://agent.electricimp.com/SPUBUw8wBOEZ/status
+23/12/2013 18:24:29 Logger DEBUG: got response text: last ping: 2013-12-23T23:45:19Z
+imp version: 
+agent version: 3350ffc - jenkins-ei-named-branch-1437 - Mon Dec 23 14:27:02 2013
+23/12/2013 18:24:29 Logger DEBUG: Exiting agentEndpointTest()
+23/12/2013 18:24:29 Logger DEBUG: Entering quit()
+23/12/2013 18:24:30 Logger DEBUG: Entering quit()
+23/12/2013 18:24:30 Logger DEBUG: Entering close()
+23/12/2013 18:24:30 Logger DEBUG: Exiting close()
+27/12/2013 22:21:38 Logger 
+27/12/2013 22:21:38 Logger 
+27/12/2013 22:21:38 Logger ====================== Start Logging======================
+27/12/2013 22:21:38 Logger DEBUG: system type: PR
+27/12/2013 22:21:38 Logger DEBUG: Staging: ST
+27/12/2013 22:21:38 Logger DEBUG: Production: PR
+27/12/2013 22:21:38 Logger DEBUG: st_prefix: st_
+27/12/2013 22:21:38 Logger DEBUG: pr_prefix: pr_
+27/12/2013 22:21:38 Logger DEBUG: got inputAddr: pr_browserType
+27/12/2013 22:21:38 Logger DEBUG: got input data: CH
+27/12/2013 22:21:38 Logger DEBUG: got browser type: CH
+27/12/2013 22:21:38 Logger DEBUG: got inputAddr: pr_chromeDriverPath
+27/12/2013 22:21:38 Logger DEBUG: got input data: //Users//joechou//Downloads//chromedriver
+27/12/2013 22:21:38 Logger DEBUG: got chrome driver path: //Users//joechou//Downloads//chromedriver
+27/12/2013 22:21:41 Logger DEBUG:  entering loginTest1()
+27/12/2013 22:21:41 Logger DEBUG: got inputAddr: pr_testSiteUrl
+27/12/2013 22:21:41 Logger DEBUG: got input data: https://ide.electricimp.com
+27/12/2013 22:21:41 Logger DEBUG: got test url: https://ide.electricimp.com
+27/12/2013 22:21:42 Logger DEBUG: got inputAddr: pr_uname
+27/12/2013 22:21:42 Logger DEBUG: got input data: joechou1638
+27/12/2013 22:21:42 Logger DEBUG: got inputAddr: pr_pword
+27/12/2013 22:21:42 Logger DEBUG: got input data: renzhen1
+27/12/2013 22:21:42 Logger DEBUG:  login user name: joechou1638, password: renzhen1=======
+27/12/2013 22:21:45 Logger DEBUG:  page title: Electric Imp - IDE=======
+27/12/2013 22:21:46 Logger DEBUG: exiting loginTest1()
+27/12/2013 22:21:46 Logger DEBUG: Entering addFIMpTest()
+27/12/2013 22:21:51 Logger DEBUG: got number of elements: 2
+27/12/2013 22:21:51 Logger DEBUG: target factory imp already added
+27/12/2013 22:21:51 Logger DEBUG: Entering addWebhookTest()
+27/12/2013 22:21:53 Logger DEBUG: should be on IDE page, going there
+27/12/2013 22:21:59 Logger DEBUG: got inputAddr: pr_webhookUrl
+27/12/2013 22:21:59 Logger DEBUG: got input data: https://ei-ide.firebaseio.com/testLog.json
+27/12/2013 22:21:59 Logger DEBUG: got test webhook URL: https://ei-ide.firebaseio.com/testLog.json
+27/12/2013 22:21:59 Logger DEBUG: number of elements: 1
+27/12/2013 22:21:59 Logger DEBUG: got number of webhooks: 1
+27/12/2013 22:21:59 Logger DEBUG: got text: https://ei-ide.firebaseio.com/testLog.json
+27/12/2013 22:21:59 Logger DEBUG: Entering assignModelTest()
+27/12/2013 22:22:01 Logger DEBUG: should be on IDE page, going there
+27/12/2013 22:22:04 Logger DEBUG: got inputAddr: pr_newDevId
+27/12/2013 22:22:04 Logger DEBUG: got input data: 237946eb6e4936ee
+27/12/2013 22:22:04 Logger DEBUG: number of elements: 2
+27/12/2013 22:22:04 Logger DEBUG: got device id: 237946eb6e4936ee
+27/12/2013 22:22:06 Logger DEBUG: got inputAddr: pr_newDevName
+27/12/2013 22:22:06 Logger DEBUG: got input data: DelDev2
+27/12/2013 22:22:06 Logger DEBUG: got target new device name: DelDev2
+27/12/2013 22:22:06 Logger DEBUG: got inputAddr: pr_newModName
+27/12/2013 22:22:06 Logger DEBUG: got input data: DelMod2
+27/12/2013 22:22:06 Logger DEBUG: got device associated model name: DelMod2
+27/12/2013 22:22:07 Logger DEBUG: got mod list size: 11
+27/12/2013 22:22:07 Logger DEBUG: got mTitle 1: DelMod2
+27/12/2013 22:22:08 Logger DEBUG: action result: Success Your device settings were updated!
+27/12/2013 22:22:11 Logger DEBUG: Exiting assignModelTest()
+27/12/2013 22:22:11 Logger DEBUG: entering changeFWTest()
+27/12/2013 22:22:15 Logger DEBUG: action result: Success Your code is running!
+27/12/2013 22:22:16 Logger DEBUG: action result: Success: This model has been promoted to the Ops Panel.
+27/12/2013 22:22:24 Logger DEBUG: select option size: 3
+27/12/2013 22:22:25 Logger DEBUG: action result: Success The associated firmware with this model has been updated!
+27/12/2013 22:22:28 Logger DEBUG: exiting changeFWTest()
+27/12/2013 22:22:28 Logger DEBUG: entering deleteDevTest()
+27/12/2013 22:22:30 Logger DEBUG: should be on IDE page, going there
+27/12/2013 22:22:33 Logger DEBUG: got inputAddr: pr_newModName
+27/12/2013 22:22:33 Logger DEBUG: got input data: DelMod2
+27/12/2013 22:22:33 Logger DEBUG: got target model name: DelMod2
+27/12/2013 22:22:33 Logger DEBUG: number of models: 5
+27/12/2013 22:22:33 Logger DEBUG: model path: //ul[@id='model-list-container']/li[ i ]/div
+27/12/2013 22:22:33 Logger DEBUG: got model 1  title: DelMod2
+27/12/2013 22:22:34 Logger DEBUG: got number of elements: 1
+27/12/2013 22:22:34 Logger DEBUG: got target device title: DelDev2
+27/12/2013 22:22:37 Logger DEBUG: got number of elements: 0
+27/12/2013 22:22:37 Logger DEBUG: deleted device with title DelDev2
+27/12/2013 22:22:40 Logger DEBUG: exiting deleteDevTest()
+27/12/2013 22:22:40 Logger DEBUG: Entering deleteFIMpTest()
+27/12/2013 22:22:46 Logger DEBUG: got number of elements: 2
+27/12/2013 22:22:46 Logger DEBUG: action result: Success The webhooks have been updated for this model!
+27/12/2013 22:22:46 Logger DEBUG: got number of elements: 1
+27/12/2013 22:22:46 Logger DEBUG: entering opsDeployTest()
+27/12/2013 22:22:48 Logger DEBUG: should be on IDE page, going there
+27/12/2013 22:22:53 Logger DEBUG: action result: Success Your code is running!
+27/12/2013 22:22:53 Logger DEBUG: got build number string: Build 129
+27/12/2013 22:22:53 Logger DEBUG: got build number: 129
+27/12/2013 22:22:53 Logger DEBUG: action result: Success Your code is running!
+27/12/2013 22:22:53 Logger Taking 5 seconds break before clicking Operations button
+27/12/2013 22:23:01 Logger DEBUG: got staged build number: 129
+27/12/2013 22:23:02 Logger DEBUG: got deploy result: Success Your model has been deployed!
+27/12/2013 22:23:02 Logger DEBUG: got deployed build number: 129
+27/12/2013 22:23:05 Logger DEBUG: exiting opsDeployTest()
+27/12/2013 22:23:05 Logger DEBUG: Entering rmBondTest()
+27/12/2013 22:23:07 Logger DEBUG: should be on IDE page, going there
+27/12/2013 22:23:11 Logger DEBUG: got inputAddr: pr_rmDevId
+27/12/2013 22:23:11 Logger DEBUG: got input data: 23dummyDevId
+27/12/2013 22:23:11 Logger DEBUG: got rmDevId: 23dummyDevId
+27/12/2013 22:23:11 Logger DEBUG: got inputAddr: pr_rmBondPW
+27/12/2013 22:23:11 Logger DEBUG: got input data: dummyPassword
+27/12/2013 22:23:11 Logger DEBUG: got rmBondPW: dummyPassword
+27/12/2013 22:23:15 Logger DEBUG: action result: Error Invalid Credentials
+27/12/2013 22:23:18 Logger DEBUG: Exiting rmBondTest()
+27/12/2013 22:23:18 Logger DEBUG: Entering rmWebhookTest()
+27/12/2013 22:23:20 Logger DEBUG: should be on IDE page, going there
+27/12/2013 22:23:25 Logger DEBUG: got inputAddr: pr_webhookUrl
+27/12/2013 22:23:25 Logger DEBUG: got input data: https://ei-ide.firebaseio.com/testLog.json
+27/12/2013 22:23:25 Logger DEBUG: got webhook URL: https://ei-ide.firebaseio.com/testLog.json
+27/12/2013 22:23:26 Logger DEBUG: number of elements: 0
+27/12/2013 22:23:26 Logger DEBUG: webhook not exist, no deleting.
+27/12/2013 22:23:26 Logger DEBUG: entering searchTest()
+27/12/2013 22:23:28 Logger DEBUG: should be on IDE page, going there
+27/12/2013 22:23:32 Logger DEBUG: got inputAddr: pr_searchKey1
+27/12/2013 22:23:32 Logger DEBUG: got input data: 23
+27/12/2013 22:23:32 Logger DEBUG:  searchText: 23======================================
+27/12/2013 22:23:32 Logger DEBUG: sleeping for 2000 ms
+27/12/2013 22:23:34 Logger DEBUG: got number of elements: 2
+27/12/2013 22:23:34 Logger DEBUG: number of new devices found: 2
+27/12/2013 22:23:34 Logger DEBUG: got new devices addr: //div[@class='search-results-new-devices']/div[1]
+27/12/2013 22:23:36 Logger DEBUG: got new devices addr: //div[@class='search-results-new-devices']/div[2]
+27/12/2013 22:23:38 Logger DEBUG: got number of elements: 4
+27/12/2013 22:23:38 Logger DEBUG: number of model devices found: 4
+27/12/2013 22:23:38 Logger DEBUG: max number of model devices allowed (for now): 2
+27/12/2013 22:23:38 Logger DEBUG: got model devices addr: //div[@class='search-results-models']/div[1]
+27/12/2013 22:23:39 Logger DEBUG: action result: Success Your code is running!
+27/12/2013 22:23:40 Logger DEBUG: oldWin: CDwindow-595A3941-5F28-3587-EE38-3CBC2F8E192F
+27/12/2013 22:23:46 Logger DEBUG: newWin: CDwindow-E2B17A14-2E07-4B27-6646-4ED147AAEA69
+27/12/2013 22:23:47 Logger DEBUG: Current Url: https://agent.electricimp.com/WH8yYeNlYwKx
+27/12/2013 22:23:47 Logger DEBUG: got inputAddr: pr_expectedUrl
+27/12/2013 22:23:47 Logger DEBUG: got input data: agent.electricimp.com
+27/12/2013 22:23:47 Logger DEBUG: expected Url: agent.electricimp.com
+27/12/2013 22:23:47 Logger DEBUG: url OK
+27/12/2013 22:23:48 Logger DEBUG: got model devices addr: //div[@class='search-results-models']/div[2]
+27/12/2013 22:23:49 Logger DEBUG: action result: Success Your code is running!
+27/12/2013 22:23:51 Logger DEBUG: oldWin: CDwindow-595A3941-5F28-3587-EE38-3CBC2F8E192F
+27/12/2013 22:23:56 Logger DEBUG: newWin: CDwindow-8E69C45D-CE6E-14B4-BFB5-09916A8C6BCF
+27/12/2013 22:23:57 Logger DEBUG: Current Url: https://agent.electricimp.com/6ZQMp55cxyPf
+27/12/2013 22:23:57 Logger DEBUG: got inputAddr: pr_expectedUrl
+27/12/2013 22:23:57 Logger DEBUG: got input data: agent.electricimp.com
+27/12/2013 22:23:57 Logger DEBUG: expected Url: agent.electricimp.com
+27/12/2013 22:23:57 Logger DEBUG: url OK
+27/12/2013 22:24:01 Logger DEBUG: exiting searchTest()
+27/12/2013 22:24:01 Logger DEBUG: entering sidebarTest()
+27/12/2013 22:24:03 Logger DEBUG: number of models: 4
+27/12/2013 22:24:03 Logger DEBUG: max number of models allowed(for now): 2
+27/12/2013 22:24:03 Logger DEBUG: model path: //ul[@id='model-list-container']/li[ i ]/div
+27/12/2013 22:24:03 Logger DEBUG: model 1: FWMod1
+27/12/2013 22:24:04 Logger DEBUG: device path: //ul[@id='model-list-container']/li[1]/ul/li/div
+27/12/2013 22:24:04 Logger DEBUG: number of devices: 1
+27/12/2013 22:24:04 Logger DEBUG: device 1: FWDev1
+27/12/2013 22:24:06 Logger DEBUG: action result: Success Your code is running!
+27/12/2013 22:24:06 Logger DEBUG: oldWin: CDwindow-595A3941-5F28-3587-EE38-3CBC2F8E192F
+27/12/2013 22:24:11 Logger DEBUG: newWin: CDwindow-63F5F2A0-FD48-9B48-611A-C9FA0513BAC2
+27/12/2013 22:24:12 Logger DEBUG: Current Url: https://agent.electricimp.com/WH8yYeNlYwKx
+27/12/2013 22:24:12 Logger DEBUG: got inputAddr: pr_expectedUrl
+27/12/2013 22:24:12 Logger DEBUG: got input data: agent.electricimp.com
+27/12/2013 22:24:12 Logger DEBUG: expected Url: agent.electricimp.com
+27/12/2013 22:24:12 Logger DEBUG: url OK
+27/12/2013 22:24:16 Logger DEBUG: model 2: JoeM7
+27/12/2013 22:24:17 Logger DEBUG: device path: //ul[@id='model-list-container']/li[2]/ul/li/div
+27/12/2013 22:24:17 Logger DEBUG: number of devices: 1
+27/12/2013 22:24:17 Logger DEBUG: device 1: JoeD7
+27/12/2013 22:24:19 Logger DEBUG: action result: Success Your code is running!
+27/12/2013 22:24:19 Logger DEBUG: oldWin: CDwindow-595A3941-5F28-3587-EE38-3CBC2F8E192F
+27/12/2013 22:24:25 Logger DEBUG: newWin: CDwindow-51026101-8F38-9404-6397-A1DF76C80C8E
+27/12/2013 22:24:26 Logger DEBUG: Current Url: https://agent.electricimp.com/6ZQMp55cxyPf
+27/12/2013 22:24:26 Logger DEBUG: got inputAddr: pr_expectedUrl
+27/12/2013 22:24:26 Logger DEBUG: got input data: agent.electricimp.com
+27/12/2013 22:24:26 Logger DEBUG: expected Url: agent.electricimp.com
+27/12/2013 22:24:26 Logger DEBUG: url OK
+27/12/2013 22:24:30 Logger DEBUG: exiting sidebarTest()
+27/12/2013 22:24:30 Logger DEBUG: Entering afterTest()
+27/12/2013 22:24:33 Logger DEBUG: Exiting afterTest()
+27/12/2013 22:24:33 Logger DEBUG: Entering agentEndpointTest()
+27/12/2013 22:24:33 Logger DEBUG: got inputAddr: pr_agEndpointUrl
+27/12/2013 22:24:33 Logger DEBUG: got input data: https://agent.electricimp.com/SPUBUw8wBOEZ/status
+27/12/2013 22:24:34 Logger DEBUG: got response text: last ping: 2013-12-26T21:23:39Z
+imp version: af0f28a - release-27.10 - Fri Dec 13 11:08:38 2013
+agent version: 3350ffc - jenkins-ei-named-branch-1437 - Mon Dec 23 14:27:02 2013
+27/12/2013 22:24:34 Logger DEBUG: Exiting agentEndpointTest()
+27/12/2013 22:24:34 Logger DEBUG: Entering quit()
+27/12/2013 22:24:34 Logger DEBUG: Entering quit()
+27/12/2013 22:24:34 Logger DEBUG: Entering close()
+27/12/2013 22:24:34 Logger DEBUG: Exiting close()
+29/12/2013 12:34:10 Logger 
+29/12/2013 12:34:10 Logger 
+29/12/2013 12:34:10 Logger ====================== Start Logging======================
+29/12/2013 12:34:10 Logger DEBUG: system type: PR
+29/12/2013 12:34:10 Logger DEBUG: Staging: ST
+29/12/2013 12:34:10 Logger DEBUG: Production: PR
+29/12/2013 12:34:10 Logger DEBUG: st_prefix: st_
+29/12/2013 12:34:10 Logger DEBUG: pr_prefix: pr_
+29/12/2013 12:34:10 Logger DEBUG: got inputAddr: pr_browserType
+29/12/2013 12:34:10 Logger DEBUG: got input data: CH
+29/12/2013 12:34:10 Logger DEBUG: got browser type: CH
+29/12/2013 12:34:10 Logger DEBUG: got inputAddr: pr_chromeDriverPath
+29/12/2013 12:34:10 Logger DEBUG: got input data: //Users//joechou//Downloads//chromedriver
+29/12/2013 12:34:10 Logger DEBUG: got chrome driver path: //Users//joechou//Downloads//chromedriver
+29/12/2013 12:34:12 Logger DEBUG:  entering loginTest1()
+29/12/2013 12:34:12 Logger DEBUG: got inputAddr: pr_testSiteUrl
+29/12/2013 12:34:12 Logger DEBUG: got input data: https://ide.electricimp.com
+29/12/2013 12:34:12 Logger DEBUG: got test url: https://ide.electricimp.com
+29/12/2013 12:34:13 Logger DEBUG: got inputAddr: pr_uname
+29/12/2013 12:34:13 Logger DEBUG: got input data: joechou1638
+29/12/2013 12:34:13 Logger DEBUG: got inputAddr: pr_pword
+29/12/2013 12:34:13 Logger DEBUG: got input data: renzhen1
+29/12/2013 12:34:13 Logger DEBUG:  login user name: joechou1638, password: renzhen1=======
+29/12/2013 12:34:16 Logger DEBUG:  page title: Electric Imp - IDE=======
+29/12/2013 12:34:17 Logger DEBUG: exiting loginTest1()
+29/12/2013 12:34:17 Logger DEBUG: Entering addFIMpTest()
+29/12/2013 12:34:22 Logger DEBUG: got number of elements: 1
+29/12/2013 12:34:22 Logger DEBUG: target factory imp already added
+29/12/2013 12:34:22 Logger DEBUG: Entering addWebhookTest()
+29/12/2013 12:34:24 Logger DEBUG: should be on IDE page, going there
+29/12/2013 12:34:30 Logger DEBUG: got inputAddr: pr_webhookUrl
+29/12/2013 12:34:30 Logger DEBUG: got input data: https://ei-ide.firebaseio.com/testLog.json
+29/12/2013 12:34:30 Logger DEBUG: got test webhook URL: https://ei-ide.firebaseio.com/testLog.json
+29/12/2013 12:34:31 Logger DEBUG: number of elements: 0
+29/12/2013 12:34:32 Logger DEBUG: select option size: 2
+29/12/2013 12:34:32 Logger DEBUG: select option size: 3
+29/12/2013 12:34:34 Logger DEBUG: action result: Success The webhooks have been updated for this model!
+29/12/2013 12:34:34 Logger DEBUG: number of elements: 1
+29/12/2013 12:34:34 Logger DEBUG: got number of webhooks: 1
+29/12/2013 12:34:34 Logger DEBUG: got text: https://ei-ide.firebaseio.com/testLog.json
+29/12/2013 12:34:37 Logger DEBUG: Exiting addWebhookTest()
+29/12/2013 12:34:37 Logger DEBUG: Entering assignModelTest()
+29/12/2013 12:34:39 Logger DEBUG: should be on IDE page, going there
+29/12/2013 12:34:42 Logger DEBUG: got inputAddr: pr_newDevId
+29/12/2013 12:34:42 Logger DEBUG: got input data: 237946eb6e4936ee
+29/12/2013 12:34:42 Logger DEBUG: number of elements: 2
+29/12/2013 12:34:42 Logger DEBUG: got device id: 237946eb6e4936ee
+29/12/2013 12:34:43 Logger DEBUG: got inputAddr: pr_newDevName
+29/12/2013 12:34:43 Logger DEBUG: got input data: DelDev2
+29/12/2013 12:34:43 Logger DEBUG: got target new device name: DelDev2
+29/12/2013 12:34:44 Logger DEBUG: got inputAddr: pr_newModName
+29/12/2013 12:34:44 Logger DEBUG: got input data: DelMod2
+29/12/2013 12:34:44 Logger DEBUG: got device associated model name: DelMod2
+29/12/2013 12:34:45 Logger DEBUG: got mod list size: 11
+29/12/2013 12:34:45 Logger DEBUG: got mTitle 1: DelMod2
+29/12/2013 12:34:46 Logger DEBUG: action result: Success Your device settings were updated!
+29/12/2013 12:34:49 Logger DEBUG: Exiting assignModelTest()
+29/12/2013 12:34:49 Logger DEBUG: entering changeFWTest()
+29/12/2013 12:34:53 Logger DEBUG: action result: Success Your code is running!
+29/12/2013 12:34:54 Logger DEBUG: action result: Success Your code is running!
+29/12/2013 12:35:01 Logger DEBUG: select option size: 3
+29/12/2013 12:35:03 Logger DEBUG: action result: Success The associated firmware with this model has been updated!
+29/12/2013 12:35:06 Logger DEBUG: exiting changeFWTest()
+29/12/2013 12:35:06 Logger DEBUG: entering deleteDevTest()
+29/12/2013 12:35:08 Logger DEBUG: should be on IDE page, going there
+29/12/2013 12:35:11 Logger DEBUG: got inputAddr: pr_newModName
+29/12/2013 12:35:11 Logger DEBUG: got input data: DelMod2
+29/12/2013 12:35:11 Logger DEBUG: got target model name: DelMod2
+29/12/2013 12:35:11 Logger DEBUG: number of models: 5
+29/12/2013 12:35:11 Logger DEBUG: model path: //ul[@id='model-list-container']/li[ i ]/div
+29/12/2013 12:35:11 Logger DEBUG: got model 1  title: DelMod2
+29/12/2013 12:35:12 Logger DEBUG: got number of elements: 1
+29/12/2013 12:35:12 Logger DEBUG: got target device title: DelDev2
+29/12/2013 12:35:14 Logger DEBUG: got number of elements: 0
+29/12/2013 12:35:14 Logger DEBUG: deleted device with title DelDev2
+29/12/2013 12:35:17 Logger DEBUG: exiting deleteDevTest()
+29/12/2013 12:35:17 Logger DEBUG: Entering deleteFIMpTest()
+29/12/2013 12:35:23 Logger DEBUG: got number of elements: 2
+29/12/2013 12:35:23 Logger DEBUG: action result: Success The webhooks have been updated for this model!
+29/12/2013 12:35:23 Logger DEBUG: got number of elements: 1
+29/12/2013 12:35:23 Logger DEBUG: entering opsDeployTest()
+29/12/2013 12:35:25 Logger DEBUG: should be on IDE page, going there
+29/12/2013 12:35:30 Logger DEBUG: action result: Success Your code is running!
+29/12/2013 12:35:30 Logger DEBUG: got build number string: Build 130
+29/12/2013 12:35:30 Logger DEBUG: got build number: 130
+29/12/2013 12:35:30 Logger DEBUG: action result: Success Your code is running!
+29/12/2013 12:35:30 Logger Taking 5 seconds break before clicking Operations button
+29/12/2013 12:35:37 Logger DEBUG: got staged build number: 130
+29/12/2013 12:35:39 Logger DEBUG: got deploy result: Success Your model has been deployed!
+29/12/2013 12:35:39 Logger DEBUG: got deployed build number: 130
+29/12/2013 12:35:42 Logger DEBUG: exiting opsDeployTest()
+29/12/2013 12:35:42 Logger DEBUG: Entering rmBondTest()
+29/12/2013 12:35:44 Logger DEBUG: should be on IDE page, going there
+29/12/2013 12:35:47 Logger DEBUG: got inputAddr: pr_rmDevId
+29/12/2013 12:35:47 Logger DEBUG: got input data: 23dummyDevId
+29/12/2013 12:35:47 Logger DEBUG: got rmDevId: 23dummyDevId
+29/12/2013 12:35:47 Logger DEBUG: got inputAddr: pr_rmBondPW
+29/12/2013 12:35:47 Logger DEBUG: got input data: dummyPassword
+29/12/2013 12:35:47 Logger DEBUG: got rmBondPW: dummyPassword
+29/12/2013 12:35:51 Logger DEBUG: action result: Error Invalid Credentials
+29/12/2013 12:35:54 Logger DEBUG: Exiting rmBondTest()
+29/12/2013 12:35:54 Logger DEBUG: Entering rmWebhookTest()
+29/12/2013 12:35:56 Logger DEBUG: should be on IDE page, going there
+29/12/2013 12:36:02 Logger DEBUG: got inputAddr: pr_webhookUrl
+29/12/2013 12:36:02 Logger DEBUG: got input data: https://ei-ide.firebaseio.com/testLog.json
+29/12/2013 12:36:02 Logger DEBUG: got webhook URL: https://ei-ide.firebaseio.com/testLog.json
+29/12/2013 12:36:03 Logger DEBUG: number of elements: 0
+29/12/2013 12:36:03 Logger DEBUG: webhook not exist, no deleting.
+29/12/2013 12:36:03 Logger DEBUG: entering searchTest()
+29/12/2013 12:36:05 Logger DEBUG: should be on IDE page, going there
+29/12/2013 12:36:08 Logger DEBUG: got inputAddr: pr_searchKey1
+29/12/2013 12:36:08 Logger DEBUG: got input data: 23
+29/12/2013 12:36:08 Logger DEBUG:  searchText: 23======================================
+29/12/2013 12:36:08 Logger DEBUG: sleeping for 2000 ms
+29/12/2013 12:36:10 Logger DEBUG: got number of elements: 2
+29/12/2013 12:36:10 Logger DEBUG: number of new devices found: 2
+29/12/2013 12:36:10 Logger DEBUG: got new devices addr: //div[@class='search-results-new-devices']/div[1]
+29/12/2013 12:36:12 Logger DEBUG: got new devices addr: //div[@class='search-results-new-devices']/div[2]
+29/12/2013 12:36:14 Logger DEBUG: got number of elements: 4
+29/12/2013 12:36:14 Logger DEBUG: number of model devices found: 4
+29/12/2013 12:36:14 Logger DEBUG: max number of model devices allowed (for now): 2
+29/12/2013 12:36:14 Logger DEBUG: got model devices addr: //div[@class='search-results-models']/div[1]
+29/12/2013 12:36:16 Logger DEBUG: action result: Success Your code is running!
+29/12/2013 12:36:17 Logger DEBUG: oldWin: CDwindow-ECB5FC69-23DF-7772-CD8C-F5DA4290998B
+29/12/2013 12:36:22 Logger DEBUG: newWin: CDwindow-307FA23F-361A-39AB-E419-257E70B2007A
+29/12/2013 12:36:23 Logger DEBUG: Current Url: https://agent.electricimp.com/WH8yYeNlYwKx
+29/12/2013 12:36:23 Logger DEBUG: got inputAddr: pr_expectedUrl
+29/12/2013 12:36:23 Logger DEBUG: got input data: agent.electricimp.com
+29/12/2013 12:36:23 Logger DEBUG: expected Url: agent.electricimp.com
+29/12/2013 12:36:23 Logger DEBUG: url OK
+29/12/2013 12:36:24 Logger DEBUG: got model devices addr: //div[@class='search-results-models']/div[2]
+29/12/2013 12:36:26 Logger DEBUG: action result: Success Your code is running!
+29/12/2013 12:36:27 Logger DEBUG: oldWin: CDwindow-ECB5FC69-23DF-7772-CD8C-F5DA4290998B
+29/12/2013 12:36:32 Logger DEBUG: newWin: CDwindow-8890DB3A-C8D4-2315-5D65-426E60731A9D
+29/12/2013 12:36:33 Logger DEBUG: Current Url: https://agent.electricimp.com/6ZQMp55cxyPf
+29/12/2013 12:36:33 Logger DEBUG: got inputAddr: pr_expectedUrl
+29/12/2013 12:36:33 Logger DEBUG: got input data: agent.electricimp.com
+29/12/2013 12:36:33 Logger DEBUG: expected Url: agent.electricimp.com
+29/12/2013 12:36:33 Logger DEBUG: url OK
+29/12/2013 12:36:37 Logger DEBUG: exiting searchTest()
+29/12/2013 12:36:37 Logger DEBUG: entering sidebarTest()
+29/12/2013 12:36:40 Logger DEBUG: number of models: 4
+29/12/2013 12:36:40 Logger DEBUG: max number of models allowed(for now): 2
+29/12/2013 12:36:40 Logger DEBUG: model path: //ul[@id='model-list-container']/li[ i ]/div
+29/12/2013 12:36:40 Logger DEBUG: model 1: FWMod1
+29/12/2013 12:36:41 Logger DEBUG: device path: //ul[@id='model-list-container']/li[1]/ul/li/div
+29/12/2013 12:36:41 Logger DEBUG: number of devices: 1
+29/12/2013 12:36:41 Logger DEBUG: device 1: FWDev1
+29/12/2013 12:36:42 Logger DEBUG: action result: Success Your code is running!
+29/12/2013 12:36:42 Logger DEBUG: oldWin: CDwindow-ECB5FC69-23DF-7772-CD8C-F5DA4290998B
+29/12/2013 12:36:48 Logger DEBUG: newWin: CDwindow-26D369CB-4F6F-EC25-159B-43BF0B2C535F
+29/12/2013 12:36:49 Logger DEBUG: Current Url: https://agent.electricimp.com/WH8yYeNlYwKx
+29/12/2013 12:36:49 Logger DEBUG: got inputAddr: pr_expectedUrl
+29/12/2013 12:36:49 Logger DEBUG: got input data: agent.electricimp.com
+29/12/2013 12:36:49 Logger DEBUG: expected Url: agent.electricimp.com
+29/12/2013 12:36:49 Logger DEBUG: url OK
+29/12/2013 12:36:53 Logger DEBUG: model 2: JoeM7
+29/12/2013 12:36:54 Logger DEBUG: device path: //ul[@id='model-list-container']/li[2]/ul/li/div
+29/12/2013 12:36:54 Logger DEBUG: number of devices: 1
+29/12/2013 12:36:54 Logger DEBUG: device 1: JoeD7
+29/12/2013 12:36:56 Logger DEBUG: action result: Success Your code is running!
+29/12/2013 12:36:56 Logger DEBUG: oldWin: CDwindow-ECB5FC69-23DF-7772-CD8C-F5DA4290998B
+29/12/2013 12:37:01 Logger DEBUG: newWin: CDwindow-D216ED68-5F71-21B7-F4B0-C1EE0B49607F
+29/12/2013 12:37:02 Logger DEBUG: Current Url: https://agent.electricimp.com/6ZQMp55cxyPf
+29/12/2013 12:37:02 Logger DEBUG: got inputAddr: pr_expectedUrl
+29/12/2013 12:37:02 Logger DEBUG: got input data: agent.electricimp.com
+29/12/2013 12:37:02 Logger DEBUG: expected Url: agent.electricimp.com
+29/12/2013 12:37:02 Logger DEBUG: url OK
+29/12/2013 12:37:06 Logger DEBUG: exiting sidebarTest()
+29/12/2013 12:37:06 Logger DEBUG: Entering afterTest()
+29/12/2013 12:37:10 Logger DEBUG: Exiting afterTest()
+29/12/2013 12:37:10 Logger DEBUG: Entering agentEndpointTest()
+29/12/2013 12:37:10 Logger DEBUG: got inputAddr: pr_agEndpointUrl
+29/12/2013 12:37:10 Logger DEBUG: got input data: https://agent.electricimp.com/SPUBUw8wBOEZ/status
+29/12/2013 12:37:10 Logger DEBUG: got response text: last ping: 2013-12-28T15:09:48Z
+imp version: 
+agent version: 18650f0 - jenkins-ei-named-branch-1441 - Tue Dec 24 08:26:12 2013
+29/12/2013 12:37:10 Logger DEBUG: Exiting agentEndpointTest()
+29/12/2013 12:37:10 Logger DEBUG: Entering quit()
+29/12/2013 12:37:11 Logger DEBUG: Entering quit()
+29/12/2013 12:37:11 Logger DEBUG: Entering close()
+29/12/2013 12:37:11 Logger DEBUG: Exiting close()

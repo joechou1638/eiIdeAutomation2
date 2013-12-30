@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="Joes-MacBook-Pro.local" name="testSuiteA.IdeTest" tests="13" failures="1" timestamp="29 Dec 2013 20:37:11 GMT" time="180.916" errors="0">
+  <testcase name="loginTest" time="4.436" classname="testSuiteA.IdeTest"/>
+  <testcase name="addFImpTest" time="5.46" classname="testSuiteA.IdeTest"/>
+  <testcase name="addWebhookTest" time="14.589" classname="testSuiteA.IdeTest"/>
+  <testcase name="assignDevTest" time="12.422" classname="testSuiteA.IdeTest"/>
+  <testcase name="changeFWTest" time="16.584" classname="testSuiteA.IdeTest"/>
+  <testcase name="deleteDevTest" time="11.055" classname="testSuiteA.IdeTest"/>
+  <testcase name="deleteFImpTest" time="6.563" classname="testSuiteA.IdeTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at testSuiteA.IdeTest.deleteFImpTest(IdeTest.java:370)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:217)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+... Removed 27 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="opsDeployTest" time="18.772" classname="testSuiteA.IdeTest"/>
+  <testcase name="rmBondTest" time="12.414" classname="testSuiteA.IdeTest"/>
+  <testcase name="rmWebhookTest" time="8.512" classname="testSuiteA.IdeTest"/>
+  <testcase name="searchTest" time="34.489" classname="testSuiteA.IdeTest"/>
+  <testcase name="sidebarTest" time="28.894" classname="testSuiteA.IdeTest"/>
+  <testcase name="agentEndponitTest" time="0.152" classname="testSuiteA.restApiTest"/>
+</testsuite>

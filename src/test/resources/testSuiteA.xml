@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testSuiteA">
+	<test name="TestA1">
+		<classes>
+			<class name="testSuiteA.IdeTest">
+				<methods>
+				        <include name="loginTest" />
+					<include name="searchTest" />
+					<include name="sidebarTest" />
+					<include name="changeFWTest" />
+					<include name="assignDevTest" />
+					<include name="deleteDevTest" />	
+					<include name="deleteFImpTest" />			
+					<include name="addFImpTest" />
+					<include name="rmBondTest" />
+					<include name="addWebhookTest" />
+					<include name="rmWebhookTest" />
+					<include name="opsDeployTest" />
+				</methods>			
+			</class>
+			<class name="testSuiteA.restApiTest">
+				<methods>
+				    <include name="agentEndponitTest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+<!--
+	<test name="TestA2">
+		<classes>
+			<class name="testSuiteA.TestCaseA2"></class>
+		</classes>
+	</test>
+	<test name="TestA3">
+		<classes>
+			<class name="testSuiteA.TestCaseA3"></class>
+		</classes>
+	</test>
+-->
+</suite>

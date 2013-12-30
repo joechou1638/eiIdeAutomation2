@@ -1,0 +1,17 @@
+<suite name="My suite">
+<!--
+	<listeners>
+   	 	<listener class-name="org.uncommons.reportng.HTMLReporter" />
+   	 	<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+   	 	<listener class-name="listener.TestsListenerAdapter" />
+  	</listeners>
+-->
+
+	<suite-files>
+		<suite-file path="./testSuiteA.xml"/>
+<!--
+		<suite-file path="./testSuiteB.xml"/>
+-->
+	</suite-files>
+	
+</suite>
