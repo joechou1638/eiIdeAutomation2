@@ -1,0 +1,82 @@
+
+
+#EI system type: staging (ST) or production (PR):
+#sysType=ST
+sysType=PR
+#other system type related input data
+staging=ST
+production=PR
+st_prefix=st_
+pr_prefix=pr_
+
+#Browser types: FF, IE, CH, SA, OP, etc.
+st_browserType=CH
+pr_browserType=CH
+#Chrome executable whereabouts
+st_chromeDriverPath=//Users//joechou//Downloads//chromedriver
+pr_chromeDriverPath=//Users//joechou//Downloads//chromedriver
+
+#test URL
+pr_testSiteUrl=https://ide.electricimp.com
+st_testSiteUrl=https://staging-imp:weshouldtestthiscarefully@staging-ide.electricimp.com
+pr_restTestSiteUrl=chrome://restclient/content/restclient.html
+st_restTestSiteUrl=chrome://restclient/content/restclient.html
+
+#login data
+st_uname=tester_Joe
+st_pword=renzhen1
+pr_uname=joechou1638
+pr_pword=renzhen1
+
+#device settings input:
+st_newDevName=DelDev2
+pr_newDevName=DelDev2
+st_newModName=DelMod2
+pr_newModName=DelMod2
+
+#factory imp mac:
+st_fimpMac=0c2a690008e2
+pr_fimpMac=0c2a690014d7
+st_fimpMacText=0c:2a:69:00:08:e2
+pr_fimpMacText=0c:2a:69:00:14:d7
+
+#global bond removal data:
+st_rmDevId=23dummyDevId
+st_rmBondPW=dummyPassword
+pr_rmDevId=23dummyDevId
+pr_rmBondPW=dummyPassword
+
+
+#other production user:
+#uname=demo
+#pword=5050elcamino
+
+#agent link result status message
+st_expectedMsg=Response status: OK	
+st_expectedUrl=agent.electricimp.com
+pr_expectedMsg=Response status: OK	
+pr_expectedUrl=agent.electricimp.com
+#expectedUrl=https://staging-agent.electricimp.com	
+
+#search	
+st_searchKey1=23
+pr_searchKey1=23
+
+#max number of models allowed for now:
+st_maxModels=2
+pr_maxModels=2
+#max number of devices per model allowed for now:
+st_maxDevices=2
+pr_maxDevices=2
+
+#Webhooks
+st_webhookUrl=https://ei-ide.firebaseio.com/testLog.json
+pr_webhookUrl=https://ei-ide.firebaseio.com/testLog.json
+
+#device id for associate to model first and then for deleting
+st_newDevId=235699b236a7c9ee
+pr_newDevId=237946eb6e4936ee
+
+#agent endpoint test urls:
+st_agEndpointUrl=https://staging-agent.electricimp.com/cq2gTgAwDGTv/status
+pr_agEndpointUrl=https://agent.electricimp.com/SPUBUw8wBOEZ/status

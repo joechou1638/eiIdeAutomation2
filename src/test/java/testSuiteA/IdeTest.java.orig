@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -31,7 +31,7 @@ public class IdeTest extends TestBase {
   @Test
   public void loginTest()  { 
 	  
-	  LOG.info("INFO: entering loginTest1()");	  
+	  LOG.debug("DEBUG:  entering loginTest1()");	  
 	  getTestUrl("testSiteUrl");
 	  String username = getInput("uname");
 	  String password = getInput("pword");
@@ -41,7 +41,7 @@ public class IdeTest extends TestBase {
 	  LOG.debug("DEBUG:  page title: "+title+"=======");
 	  TestUtil.mySleep(1000);
 	  Assert.assertTrue(title.contains("Electric Imp - IDE"));
-	  LOG.info("INFO: exiting loginTest1()");
+	  LOG.debug("DEBUG: exiting loginTest1()");
   }
   
   // Test device search box on top of Model panel (sidebar)
@@ -51,7 +51,7 @@ public class IdeTest extends TestBase {
 	  int numDevices = 0;
 	  List<WebElement> dList = null;
 	  
-	  LOG.info("INFO: entering searchTest()");
+	  LOG.debug("DEBUG: entering searchTest()");
 	  TestUtil.mySleep(2000);
 	  // Make sure on IDE page
 	  TestUtil.beOnPage(idePageName);
@@ -113,7 +113,7 @@ public class IdeTest extends TestBase {
 	  // Close search result list
 	  driver.findElement(By.xpath(getAddr("searchDoneAddr"))).click();
 	  TestUtil.mySleep(3000);
-	  LOG.info("INFO: exiting searchTest()");
+	  LOG.debug("DEBUG: exiting searchTest()");
   }
   
   // Test models and their devices in sidebar (model panel)
@@ -122,7 +122,7 @@ public class IdeTest extends TestBase {
 	  String mpath = null;
 	  String dpath = null;
 	  
-	  LOG.info("INFO: entering sidebarTest()");
+	  LOG.debug("DEBUG: entering sidebarTest()");
 	  TestUtil.mySleep(2000);
 	  // Get list of models
 	  List<WebElement> mList = driver.findElements(By.xpath(getAddr("modListAddr")));
@@ -177,7 +177,7 @@ public class IdeTest extends TestBase {
 		  driver.findElement(By.xpath(mpath)).click();
 		  TestUtil.mySleep(3000);
 	  }
-	  LOG.info("INFO: exiting sidebarTest()");
+	  LOG.debug("DEBUG: exiting sidebarTest()");
   }
   
 
@@ -187,7 +187,7 @@ public class IdeTest extends TestBase {
   @Test (dependsOnMethods = {"loginTest"})
   public void agentServerTest() {
 	  
-	  LOG.info("INFO: entering agentServerTest()");
+	  LOG.debug("DEBUG: entering agentServerTest()");
 	  TestUtil.mySleep(2000);
 	  // Make sure on IDE page
 	  TestUtil.beOnPage(idePageName);
@@ -204,14 +204,14 @@ public class IdeTest extends TestBase {
 	  // Close devices of model (restore to previous state) by re-click on model
 	  driver.findElement(By.xpath(getAddr("targetModAddr"))).click();
       TestUtil.mySleep(3000);
-	  LOG.info("INFO: exiting agentServerTest()");
+	  LOG.debug("DEBUG: exiting agentServerTest()");
   }
   
   // Test deploying a build in ops, requires model, "ModJoe3" and its device, "DevJoe3". 
   @Test (dependsOnMethods = {"loginTest"})
   public void opsDeployTest() {
 
-	  LOG.info("INFO: entering opsDeployTest()");
+	  LOG.debug("DEBUG: entering opsDeployTest()");
 	  TestUtil.mySleep(2000);
 	  // Make sure on IDE page
 	  TestUtil.beOnPage(idePageName);
@@ -258,14 +258,14 @@ public class IdeTest extends TestBase {
 	  LOG.debug("DEBUG: got deployed build number: "+deployedBuildNum);
 	  Assert.assertTrue(deployedBuildNum.equals(stagedBuildNum));
 	  TestUtil.mySleep(3000);
-	  LOG.info("INFO: exiting opsDeployTest()");  
+	  LOG.debug("DEBUG: exiting opsDeployTest()");  
   }
   
   // Test changing firmware of production model
   @Test (dependsOnMethods = {"loginTest"})
   public void changeFWTest() {
 	  
-	  LOG.info("INFO: entering changeFWTest()");
+	  LOG.debug("DEBUG: entering changeFWTest()");
 	  TestUtil.mySleep(2000);
 	  // Make sure on IDE page
 	  TestUtil.beOnPage(idePageName);
@@ -300,14 +300,14 @@ public class IdeTest extends TestBase {
 	  Assert.assertTrue(TestUtil.actionResultOK());   
 	  //driver.findElement(By.xpath(getAddr("fwSelectBoxAddr"))).click();
 	  TestUtil.mySleep(3000);
-	  LOG.info("INFO: exiting changeFWTest()"); 
+	  LOG.debug("DEBUG: exiting changeFWTest()"); 
   }
   
   // Test deleting a device
   @Test (dependsOnMethods = {"loginTest"})
   public void deleteDevTest() {
 	  
-	  LOG.info("INFO: entering deleteDevTest()");
+	  LOG.debug("DEBUG: entering deleteDevTest()");
 	  TestUtil.mySleep(2000);
 	  // Make sure on IDE page
 	  TestUtil.beOnPage(idePageName);
@@ -316,14 +316,14 @@ public class IdeTest extends TestBase {
 	  LOG.debug("DEBUG: got target model name: "+modName);
 	  // If no target model to be deleted, return.
 	  if (!TestUtil.isModelActive(modName)) {
-		  LOG.error("ERROR: no model of device to be deleted");
+		  LOG.debug("DEBUG: no model of device to be deleted");
 		  return;
 	  }
 	  // Click on model to show device to be deleted
 	  driver.findElement(By.xpath(getAddr("delModAddr"))).click();
 	  //If no target device to be deleted, return.
 	  if (!TestUtil.isElementPresent(getAddr("delDevAddr"))) {
-		  LOG.error("ERROR: no device to be deleted");
+		  LOG.debug("DEBUG: no device to be deleted");
 		  return;
 	  }
 	  // Get device title for logging.
@@ -341,14 +341,14 @@ public class IdeTest extends TestBase {
 	  Assert.assertFalse(TestUtil.isElementPresent(getAddr("delDevAddr")));
 	  LOG.debug("DEBUG: deleted device with title "+dTitle);
 	  TestUtil.mySleep(3000);
-	  LOG.info("INFO: exiting deleteDevTest()");
+	  LOG.debug("DEBUG: exiting deleteDevTest()");
   }
   
   // Test deleting a Factory imp
   @Test (dependsOnMethods = {"loginTest"})
   public void deleteFImpTest() {
       
-	  LOG.info("INFO: Entering deleteFIMpTest()");
+	  LOG.debug("DEBUG: Entering deleteFIMpTest()");
 	  TestUtil.mySleep(2000);
 	  // Make sure on IDE page
 	  TestUtil.beOnPage(idePageName);
@@ -360,7 +360,7 @@ public class IdeTest extends TestBase {
 	  driver.findElement(By.xpath(getAddr("prodModAddr"))).click();
 	  // If no target factory imp to be deleted, return.
 	  if (!TestUtil.isElementPresent(getAddr("delFImpButtonAddr"))) {
-		  LOG.error("ERROR: no target factory imp to be deleted");
+		  LOG.debug("DEBUG: no target factory imp to be deleted");
 		  return;
 	  }
 	  // Delete target factory imp
@@ -369,14 +369,14 @@ public class IdeTest extends TestBase {
 	  // Make suer factory imp deleted
 	  Assert.assertTrue(!TestUtil.isElementPresent(getAddr("FImpMacListAddr")));
 	  TestUtil.mySleep(3000);
-	  LOG.info("INFO: exiting deleteFIMpTest()");
+	  LOG.debug("DEBUG: exiting deleteFIMpTest()");
   }
   
   // Test adding a factory imp
   @Test (dependsOnMethods = {"loginTest"})
   public void addFImpTest() {
       
-	  LOG.info("INFO: Entering addFIMpTest()");
+	  LOG.debug("DEBUG: Entering addFIMpTest()");
 	  TestUtil.mySleep(2000);
 	  // Make sure on IDE page
 	  TestUtil.beOnPage(idePageName);
@@ -387,7 +387,7 @@ public class IdeTest extends TestBase {
 	  driver.findElement(By.xpath(getAddr("prodModAddr"))).click();
 	  // If already added, return
 	  if (TestUtil.isElementPresent(getAddr("delFImpButtonAddr"))) {
-		  LOG.error("ERROR: target factory imp already added");
+		  LOG.debug("DEBUG: target factory imp already added");
 		  return;
 	  }	 
 	  // Click on add button ('+' sign) to open mac input
@@ -404,13 +404,13 @@ public class IdeTest extends TestBase {
 	  // Make sure factory imp added
 	  Assert.assertTrue(TestUtil.isElementPresent(getAddr("FImpMacListAddr")));
 	  TestUtil.mySleep(3000);
-	  LOG.info("INFO: exiting addFIMpTest()");
+	  LOG.debug("DEBUG: exiting addFIMpTest()");
   }
   
   @Test (dependsOnMethods = {"loginTest"})
   public void rmBondTest() {
       
-	  LOG.info("INFO: Entering rmBondTest()");
+	  LOG.debug("DEBUG: Entering rmBondTest()");
 	  TestUtil.mySleep(2000);
 	  // Make sure on IDE page
 	  TestUtil.beOnPage(idePageName);
@@ -435,14 +435,14 @@ public class IdeTest extends TestBase {
 	  // Expected to be rejected
 	  Assert.assertTrue(!TestUtil.actionResultOK());	  
 	  TestUtil.mySleep(3000);
-	  LOG.info("INFO: Exiting rmBondTest()");
+	  LOG.debug("DEBUG: Exiting rmBondTest()");
   }
   
   @Test (dependsOnMethods = {"loginTest"})
   public void addWebhookTest() {
 	  
 	  
-	  LOG.info("INFO: Entering addWebhookTest()");
+	  LOG.debug("DEBUG: Entering addWebhookTest()");
 	  TestUtil.mySleep(2000);
 	  // Make sure on IDE page
 	  TestUtil.beOnPage(idePageName); 
@@ -456,7 +456,7 @@ public class IdeTest extends TestBase {
 	  LOG.debug("DEBUG: got test webhook URL: "+whUrl);
 	  // If target webhook already exists, return
 	  if (TestUtil.getWebhook(whUrl) != null) {
-		  LOG.error("ERROR: webhook already existed, no adding.");
+		  //LOG.debug("DEBUG: webhook already existed, no adding.");
 		  return;
 	  }
 	  // Click on add button of webhook
@@ -476,13 +476,13 @@ public class IdeTest extends TestBase {
 	  // Make sure target webhook existed now
 	  Assert.assertTrue((TestUtil.getWebhook(whUrl) != null));
 	  TestUtil.mySleep(3000);
-	  LOG.info("INFO: Exiting addWebhookTest()");
+	  LOG.debug("DEBUG: Exiting addWebhookTest()");
   }
   
   @Test (dependsOnMethods = {"loginTest"})
   public void rmWebhookTest() {	  
 	  
-	  LOG.info("INFO: Entering rmWebhookTest()");
+	  LOG.debug("DEBUG: Entering rmWebhookTest()");
 	  TestUtil.mySleep(2000);
 	  // Make sure on IDE page
 	  TestUtil.beOnPage(idePageName); 
@@ -497,7 +497,7 @@ public class IdeTest extends TestBase {
 	  // If target webhook not exist, done
 	  WebElement wh = TestUtil.getWebhook(whUrl);
 	  if ( wh == null) {
-		  LOG.error("ERROR: webhook not exist, no deleting.");
+		  LOG.debug("DEBUG: webhook not exist, no deleting.");
 		  return;
 	  }
 	  // Get delete button of target webhook
@@ -510,14 +510,14 @@ public class IdeTest extends TestBase {
 	  // Make sure target webhook no longer existed
 	  Assert.assertTrue((TestUtil.getWebhook(whUrl) == null));
 	  TestUtil.mySleep(3000);
-	  LOG.info("INFO: Exiting rmWebhookTest()");
+	  LOG.debug("DEBUG: Exiting rmWebhookTest()");
   }
   
   // Assign a new device to a model
   @Test (dependsOnMethods = {"loginTest"})
   public void assignDevTest() {
 	  
-	  LOG.info("INFO: Entering assignModelTest()");
+	  LOG.debug("DEBUG: Entering assignModelTest()");
 	  TestUtil.mySleep(2000);
 	  // Make sure on IDE page
 	  TestUtil.beOnPage(idePageName); 
@@ -557,7 +557,7 @@ public class IdeTest extends TestBase {
 	  Assert.assertTrue(TestUtil.actionResultOK());
 	  // Validate newly added model and its device exist i sidebar model list?
 	  TestUtil.mySleep(3000);
-	  LOG.info("INFO: Exiting assignModelTest()");
+	  LOG.debug("DEBUG: Exiting assignModelTest()");
   }
   
   @BeforeTest
@@ -567,9 +567,9 @@ public class IdeTest extends TestBase {
   }
 
   @AfterClass
-  public void end() throws Exception {
+  public void close() throws Exception {
 
-	  LOG.info("INFO: Entering AfterTest end()");
+	  LOG.debug("DEBUG: Entering afterTest()");
 	  TestUtil.mySleep(1000);
       // Logout 
       driver.navigate().refresh();
@@ -581,16 +581,15 @@ public class IdeTest extends TestBase {
 	  Thread.sleep(500);
 	  // Close all windows
 	  //driver.quit();  // delay till end of all tests
-	  LOG.info("INFO: Exiting afterTest end()");
+	  LOG.debug("DEBUG: Exiting afterTest()");
   }
   
-  @AfterSuite
+  @AfterTest
   public void quit() {
 	  
-	  LOG.info("INFO: Entering AfterSuite quit()");
-	  LOG.info("INFO: init_enter_count: "+init_enter_count+", init_run_count: "+init_run_count);
+	  LOG.debug("DEBUG: Entering quit()");
 	  // Close all windows
 	  driver.quit();
-	  LOG.info("INFO: Exiting AfterSuite quit()");
+	  LOG.debug("DEBUG: Entering quit()");
   }
 }

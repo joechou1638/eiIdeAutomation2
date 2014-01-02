@@ -296,7 +296,8 @@ public class TestUtil extends TestBase{
 		LOG.debug("DEBUG: got mod list size: "+mListSize);
 		// Search for target model in list, index start with 1
 		for (int i = 1; i <= mListSize; i++) {
-			String mTitle = driver.findElement(By.xpath(path1+path2 + i + path3)).getText();
+			//String mTitle = driver.findElement(By.xpath(path1 + path2 + i + path3)).getText();
+			String mTitle = driver.findElement(By.xpath(path1 + "[" + i + "]/div")).getText();
 			LOG.debug("DEBUG: got mTitle "+i+": "+mTitle);
 			if (mTitle.contains(modName)) {
 				we = driver.findElement(By.xpath(path1+"[" + i + "]/div"));

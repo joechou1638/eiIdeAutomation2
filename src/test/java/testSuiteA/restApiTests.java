@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import base.TestBase;
 
 
-public class restApiTest extends TestBase{
+public class restApiTests extends TestBase{
 	
   @Test
   public void agentEndponitTest() {
@@ -39,8 +39,8 @@ public class restApiTest extends TestBase{
 
   @AfterTest
   public void close() throws Exception {
-	  LOG.info("INFO: Entering AfterTest close()");
+	  LOG.info("INFO: Entering close()");
 	  //driver.quit();
-	  LOG.info("INFO: Exiting AfterTest close()");
+	  LOG.info("INFO: Exiting close()");
   }
 }

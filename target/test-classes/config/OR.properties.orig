@@ -44,11 +44,8 @@ promoteButtonAddr=//button[@id='promote']
 promoteOKAddr=//div[4]/div/div/span
 delModAddr=//div[@title='DelMod2']
 #delModAddr=//ul[@class='model-list-container']/li/div[@title='DelMod2']
-#delDevAddr=//div[@title='DelDev2']
-delDevAddr=//ul[@id='model-list-container']/li/ul/li/div[@title='DelDev2' or @id='237946eb6e4936ee']
-#delDevAddr=//div[@title='DelDev2' or @id='237946eb6e4936ee']
-delDevIconAddr=//div[@title='DelDev2' or @id='237946eb6e4936ee']/i
-#delDevIconAddr=//*[@id='237946eb6e4936ee']/i
+delDevAddr=//div[@title='DelDev2']
+delDevIconAddr=//div[@title='DelDev2']/i
 delDevButtonAddr=//div[@class='pull-left']/button
 #delDevButtonAddr=//button[@class='btn btn-danger delete']
 
@@ -99,11 +96,9 @@ fwSelectBoxAddr=//select[@id='factory-select']
 fwUpdateOKAddr=//div[4]/div/div/span
 
 #Add or remove factory imp
-
 addFImpButtonAddr=//button[@id='add-factory-imp-button']
-#delFImpButtonAddr=//a[@href='javascript:void(0)']/i
-delFImpButtonAddr=//table[@id='factory-imps-info-table']/tbody/tr/td[3]/a/i
-FImpMacAddr=//table[@id='factory-imps-info-table']/tbody/tr/td[1]
+delFImpButtonAddr=//a[@href='javascript:void(0)']/i
+FImpMacAddr=//table[@id='factory-imps-info-table']/table/tr/td[1]
 FImpMacListAddr=//table[@id='factory-imps-info-table']/tbody/tr
 prodModAddr=//div[@title='ProdMod1']
 macInputAddr=//*[@id='factory-imp-mac']

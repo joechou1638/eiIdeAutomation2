@@ -16,7 +16,7 @@ public class restApiTest extends TestBase{
   @Test
   public void agentEndponitTest() {
 	  
-	  LOG.info("INFO: Entering agentEndpointTest()");
+	  LOG.debug("DEBUG: Entering agentEndpointTest()");
 	  // Go to rest client test site
 	  //getTestUrl("restTestSiteUrl");
 	  String agUrl = getInput("agEndpointUrl");
@@ -27,7 +27,7 @@ public class restApiTest extends TestBase{
 	  LOG.debug("DEBUG: got response text: "+respText);
 	  // Validate response data
 	  Assert.assertTrue(respText.contains("last ping"));
-	  LOG.info("INFO: Exiting agentEndpointTest()");
+	  LOG.debug("DEBUG: Exiting agentEndpointTest()");
   }
 
 
@@ -39,8 +39,8 @@ public class restApiTest extends TestBase{
 
   @AfterTest
   public void close() throws Exception {
-	  LOG.info("INFO: Entering AfterTest close()");
+	  LOG.debug("DEBUG: Entering close()");
 	  //driver.quit();
-	  LOG.info("INFO: Exiting AfterTest close()");
+	  LOG.debug("DEBUG: Exiting close()");
   }
 }

@@ -33,17 +33,23 @@ public class TestBase {
 	public static String st_prefix = null;
 	public static String pr_prefix = null;
 	
+	//Temp code:
+	public static int init_enter_count = 0;
+	public static int init_run_count = 0;
+	
 	
 	
 	public void initialize() throws IOException {
 		
 		System.out.println("Entering initialize()********************************");
+		init_enter_count++;		
 		// If already initialized, do nothing.
 		if (driver != null) {
 			System.out.println("Already initialized===========================");
 			return;
 		} else {
 			System.out.println("initializing===========================");
+			init_run_count++;
 		}
 	
 		FileInputStream fn = null;
@@ -150,8 +156,8 @@ public class TestBase {
 	}
 	
 	public void startLog(){
-		LOG.fatal("");
-		LOG.fatal("");
-		LOG.fatal("====================== Start Logging======================");
+		LOG.info("");
+		LOG.info("");
+		LOG.info("INFO: ====================== Start Logging======================");
 	}
 }
