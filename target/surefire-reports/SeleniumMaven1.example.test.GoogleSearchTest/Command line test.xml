@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="Joes-MacBook-Pro.local" name="SeleniumMaven1.example.test.GoogleSearchTest" tests="1" failures="0" timestamp="18 Nov 2013 22:39:43 GMT" time="10.537" errors="0">
-  <testcase name="testGoogleSearch" time="1.052" classname="SeleniumMaven1.example.test.GoogleSearchTest"/>
-</testsuite>
