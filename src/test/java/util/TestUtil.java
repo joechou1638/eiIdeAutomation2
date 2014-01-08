@@ -91,6 +91,7 @@ public class TestUtil extends TestBase{
 	    wWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathStr)));
 	    String actionResult = driver.findElement(By.xpath(xpathStr)).getText();
 	    LOG.debug("DEBUG: action result: "+actionResult);
+	    mySleep(1000);
 	    if (actionResult.contains("Success")) {
 	    	return true;
 	    } else {
@@ -296,8 +297,7 @@ public class TestUtil extends TestBase{
 		LOG.debug("DEBUG: got mod list size: "+mListSize);
 		// Search for target model in list, index start with 1
 		for (int i = 1; i <= mListSize; i++) {
-			//String mTitle = driver.findElement(By.xpath(path1 + path2 + i + path3)).getText();
-			String mTitle = driver.findElement(By.xpath(path1 + "[" + i + "]/div")).getText();
+			String mTitle = driver.findElement(By.xpath(path1+"[" + i + "]/div")).getText();
 			LOG.debug("DEBUG: got mTitle "+i+": "+mTitle);
 			if (mTitle.contains(modName)) {
 				we = driver.findElement(By.xpath(path1+"[" + i + "]/div"));

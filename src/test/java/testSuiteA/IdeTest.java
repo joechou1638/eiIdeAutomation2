@@ -254,6 +254,7 @@ public class IdeTest extends TestBase {
 	  LOG.debug("DEBUG: got deploy result: "+dResult);
 	  Assert.assertTrue(dResult.contains("Success"));
 	  //Validate deployed build number
+	  TestUtil.mySleep(1000);
 	  String deployedBuildNum = driver.findElement(By.xpath(getAddr("deployedBuildNumAddr"))).getText();
 	  LOG.debug("DEBUG: got deployed build number: "+deployedBuildNum);
 	  Assert.assertTrue(deployedBuildNum.equals(stagedBuildNum));
