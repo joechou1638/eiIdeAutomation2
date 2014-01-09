@@ -489,9 +489,10 @@ public class IdeTest extends TestBase {
 	  TestUtil.beOnPage(idePageName); 
 	  // Go to Operations page
 	  driver.findElement(By.xpath(getAddr("opsAddr"))).click();
-	  // Click on target model to open operations
 	  TestUtil.mySleep(2000); 
+	  // Click on target model to open operations
 	  driver.findElement(By.xpath(getAddr("prodModAddr"))).click();
+	  TestUtil.mySleep(1000);
 	  // Get target webhook url 
 	  String whUrl = getInput("webhookUrl");
 	  LOG.debug("DEBUG: got webhook URL: "+whUrl);
@@ -505,7 +506,7 @@ public class IdeTest extends TestBase {
 	  List<WebElement> cols = wh.findElements(By.tagName("td"));
 	  // Delete target webhook
 	  cols.get(4).click();	  
-      // Validate target webhook removed OK
+          // Validate target webhook removed OK
 	  Assert.assertTrue(TestUtil.actionResultOK());
 	  TestUtil.mySleep(1000);
 	  // Make sure target webhook no longer existed
