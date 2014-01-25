@@ -14,6 +14,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -27,29 +28,31 @@ public class TestUtil extends TestBase{
 		driver.findElement(By.xpath(getAddr("unameAddr"))).sendKeys(uname);
 		driver.findElement(By.xpath(getAddr("pwordAddr"))).clear();
 		driver.findElement(By.xpath(getAddr("pwordAddr"))).sendKeys(pword);
-		driver.findElement(By.xpath(getAddr("sbuttonAddr"))).click();
-		mySleep(2000);
+		clickOnElement(getAddr("sbuttonAddr"), 2000);
 	}
 	
 	public static void doSearch(String sText) {
 		
 		driver.findElement(By.xpath(getAddr("searchInputAddr"))).clear();
 		driver.findElement(By.xpath(getAddr("searchInputAddr"))).sendKeys(sText);
-		driver.findElement(By.xpath(getAddr("searchStartAddr"))).click();
-		LOG.debug("DEBUG: sleeping for 2000 ms");
-		mySleep(2000);
+		clickOnElement(getAddr("searchStartAddr"), 2000);
 	}
 	
-	public static boolean clickAgLinkOK(String agResponse) {			  
+	public static boolean clickAgLinkOK(String agResponse, String agLinkAddr) {			  
 		String newWin = null;
 		boolean rval = false;
-			  
+		
+		// First check if agent link is there (factory device does not have agent link), if not, do nothing
+		if (!driver.findElement(By.xpath(agLinkAddr)).isDisplayed()) {
+			LOG.info("INFO: no agent link available, return");
+			rval = true;
+			return rval;
+		}
 		// Save current window handle for returning later
 		String oldWin = driver.getWindowHandle();	    		    	
 	    LOG.debug("DEBUG: oldWin: "+oldWin);
 	    // Click on agent link and validate result
-	    driver.findElement(By.xpath(getAddr("agLinkAddr"))).click();
-		mySleep(5000);
+	    clickOnElement(agLinkAddr, 5000);
 		// Get agent link window handle
 		Set<String> winSet = driver.getWindowHandles();
 		for (String wid: winSet) {
@@ -86,7 +89,6 @@ public class TestUtil extends TestBase{
 	
 	public static boolean actionResultOK() {
 		
-		//driver.findElement(By.xpath(getAddr("macSubmitAddr"))).click();
 		String xpathStr = getAddr("actionResultAddr");
 	    wWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathStr)));
 	    String actionResult = driver.findElement(By.xpath(xpathStr)).getText();
@@ -120,6 +122,17 @@ public class TestUtil extends TestBase{
 		// Restore timer back to 30 seconds
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		return rval;
+	}
+	
+	public static int getNumElements(String eXpath) {
+	
+		// Shorten timer from 30 seconds to 1
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		int numElements = driver.findElements(By.xpath(eXpath)).size();
+		LOG.debug("DEBUG: got number of elements: "+numElements);
+		// Restore timer back to 30 seconds
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		return numElements;		
 	}
 
 	public static boolean isModelActive(String modName) {
@@ -195,16 +208,14 @@ public class TestUtil extends TestBase{
 		if (pageName.contains("IDE")) {  // Need to be on IDE page
 			if (!pTitle.contains(idePageName)) {
 				// go to IDE page by clicking code tab
-				LOG.debug("DEBUG: should be on IDE page, going there");
-				driver.findElement(By.xpath(getAddr("codeAddr"))).click();
-				mySleep(2000);
+				LOG.debug("DEBUG: go to IDE page");
+				clickOnElement(getAddr("codeAddr"), 2000);
 			}
 		} else if (pageName.contains("OPs")) { // need to be on ops page
 			if (!pTitle.contains(opsPageName)) {
 				// go to ops page by clicking operations tab
-				LOG.debug("DEBUG: should be on OPs page, going there");
-				driver.findElement(By.xpath(getAddr("opsAddr"))).click();
-				mySleep(2000);
+				LOG.debug("DEBUG: go to OPs page");
+				clickOnElement(getAddr("opsAddr"), 2000);
 			}
 		} else {
 			LOG.error("ERROR: invalid page name: "+pageName);
@@ -212,24 +223,11 @@ public class TestUtil extends TestBase{
 		mySleep(1000);
 	}
 	
-	public static int numOfElements(String xpathStr) {
-		
-		// Shorten timer from 30 seconds to 1
-		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-		int numElement = driver.findElements(By.xpath(xpathStr)).size();
-		LOG.debug("DEBUG: number of elements: "+numElement);
-		// Restore timer back to 30 seconds
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		return numElement;
-		
-	}
-	
 	public static void mySelect(String xpathAddr, int optionIndex) {
 		
 		  wElement = driver.findElement(By.xpath(xpathAddr));
 		  List <WebElement> optionList = wElement.findElements(By.tagName("option"));
 		  LOG.debug("DEBUG: select option size: "+optionList.size());
-
 		  TestUtil.mySleep(500);
 		  //Select option (index started with 0)
 		  optionList.get(optionIndex).click();
@@ -240,7 +238,7 @@ public class TestUtil extends TestBase{
 		WebElement whe = null;
 		
 		// If no existing webhook, return;
-		if (numOfElements(getAddr("whListAddr")) == 0) {
+		if (getNumElements(getAddr("whListAddr")) == 0) {
 			return whe;
 		}
 		int whNum = driver.findElements(By.xpath(getAddr("whListAddr"))).size();
@@ -264,25 +262,25 @@ public class TestUtil extends TestBase{
 		return whe;
 	}
 	
-	// Get target device in new device list
-	public static WebElement getNewDev(String devId) {
+	// Get address of target device in new device list
+	public static String getNewDev(String devId) {
 	
-		WebElement we = null;
+		String ndAddr = null;
 		String ndListPath = getAddr("newDevListAddr");
-		int numOfDev = numOfElements(ndListPath);
+		int numOfDev = getNumElements(ndListPath);
 		// Search for target device on list (remember: li index starts at 1, not 0
 		for (int i=1; i<=numOfDev; i++) {
-			String dPath = ndListPath + "[" + i + "]/div";
+			String dPath = ndListPath + "[" + i + "]";
 			// Get device id
-			String dId = driver.findElement(By.xpath(dPath)).getAttribute("id");
+			String dId = driver.findElement(By.xpath(dPath+"/span")).getText();
 			LOG.debug("DEBUG: got device id: "+dId);
 			// if found, update return element
 			if (dId.contains(devId)) {
-				we = driver.findElement(By.xpath(dPath));
+				ndAddr = dPath;
 				break;
 			}
 		}
-		return we;
+		return ndAddr;
 	}
 	
 	public static WebElement getNewMod(String modName) {
@@ -305,6 +303,133 @@ public class TestUtil extends TestBase{
 			}		
 		}
 		return we;
+	}
+	
+	// Click on element and then take a break to let page render
+	public static void clickOnElement(String objXpath, int ms) {
+		driver.findElement(By.xpath(objXpath)).click();
+		mySleep(ms);  
+	}
+	
+	// Find a model's address based on its name and type (1: active, 2: factory, 3: inactive)
+	public static String findModAddr(String mName, modType mType) {
+
+		String mAddr = null;
+		String retAddr = null;
+		switch (mType) {
+
+	    case ACTIVE: 
+	    	mAddr = getAddr("AMListAddr");
+		    break;
+	    case FACTORY: 
+	    	mAddr = getAddr("FMListAddr");
+		    break;
+	    case INACTIVE: 
+	    	mAddr = getAddr("IMListAddr");   
+		    break;
+		default: 
+		    LOG.error("ERROR: invalid model type: " + mType);
+		    break;
+		}
+		LOG.debug("DEBUG: got model address: "+mAddr);
+		// Get list of models
+		int mListSize = TestUtil.getNumElements(mAddr);	  
+		// Loop through models to find target
+		for (int i=1; i <= mListSize; i++) {  
+			String mpath = mAddr + "[" + i + "]";
+			String mTitle = driver.findElement(By.xpath(mpath+"/div/span")).getText();
+			LOG.debug("DEBUG: model "+i+": "+mTitle);
+			if (mTitle.contains(mName)) {
+				retAddr = mpath;
+				LOG.debug("DEBUG: found target model address: "+retAddr);
+				break;
+			}
+		}
+		return retAddr;
+	}
+	
+	// Find model based on its address and type (1: active, 2: factory, 3: inactive)
+	public static WebElement findModel(String mAddr, modType mType) {
+		
+		String modAddr = findModAddr(mAddr, mType);
+		return driver.findElement(By.xpath(modAddr));
+	}
+	
+	// Find device in a model
+	public static String findDevInMod(String modName, modType mType, String devName) {
+		
+		String devAddr = null;
+		String modAddr = findModAddr(modName, mType);
+		if (modAddr == null) {
+			LOG.error("ERROR: failed to find model "+modName+" in "+mType+" model list");
+			//return devAddr;
+		} else { // Get list of devices of model
+			int numDev= driver.findElements(By.xpath(modAddr+"/ol/li")).size();
+			// If model has devices, open its list of devices
+			if (numDev > 0) {
+				clickOnElement(modAddr+"/div/i[1]", 500);
+			}
+			for (int i = 1; i <= numDev; i++) {
+				// Get device address
+				String dAddr = modAddr+"/ol/li["+i+"]/span";
+				// Get device name
+				String dName = driver.findElement(By.xpath(dAddr)).getText();
+				LOG.debug("DEBUG: got device "+dName+" in model "+modName);
+				if (dName.contains(devName)) {
+					LOG.debug("DEBUG: found it");
+					devAddr = dAddr;
+					clickOnElement(modAddr+"/div/i[1]", 500);  // Close model device list (restore)
+					break;
+				}
+			}
+		}
+		return devAddr;
+	}
+	
+	public static int getMaxModForNow(int numMod) {
+		
+		int nMod = numMod;
+		int mMod = Integer.parseInt(getInput("maxModels"));
+		if (numMod > mMod) {
+			nMod = mMod;
+			LOG.debug("DEBUG: change number of models from "+numMod+" to "+nMod);
+		}
+		return nMod;
+	}
+	
+	public static int getMaxDevForNow(int numDev) {
+	
+		int nDev = numDev;
+		int mDev = Integer.parseInt(getInput("maxDevices"));
+		if (numDev > mDev) {
+			nDev = mDev;
+			LOG.debug("DEBUG: change number of devices from "+numDev+" to "+mDev);
+		}
+		return nDev;
+	}
+	
+	public static void moveMouseOverAndClick(String eAddr) {
+		
+		if (isElementPresent(eAddr)) {
+			wElement = driver.findElement(By.xpath(eAddr));
+		    new Actions(driver).moveToElement(wElement).perform();
+		    if (wElement.isDisplayed()) {
+		        wElement.click();
+		    }
+		    mySleep(1000);
+		}
+	}
+	
+	public static WebElement findElement(String eAddr) {
+		
+		WebElement we = null;		
+		// Shorten timer from 30 seconds to 1
+		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+		we = driver.findElement(By.xpath(eAddr));
+		// Restore timer back to 30 seconds
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		return we;
+		
 	}
 	
 	// Sleep for i ms

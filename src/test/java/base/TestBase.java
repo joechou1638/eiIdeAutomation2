@@ -17,7 +17,7 @@ import com.thoughtworks.selenium.Selenium;
 public class TestBase {
 
 	//Initalize property file
-	public static Properties CONFIG=null;
+	//public static Properties CONFIG=null;
 	public static Properties ADDR=null;
 	public static Properties INPUT=null;
 	public static WebDriver driver = null;
@@ -32,24 +32,19 @@ public class TestBase {
 	public static String Production = null;
 	public static String st_prefix = null;
 	public static String pr_prefix = null;
-	
-	//Temp code:
-	public static int init_enter_count = 0;
-	public static int init_run_count = 0;
+	public static enum modType {ACTIVE, FACTORY, INACTIVE};
 	
 	
 	
 	public void initialize() throws IOException {
 		
 		System.out.println("Entering initialize()********************************");
-		init_enter_count++;		
 		// If already initialized, do nothing.
 		if (driver != null) {
 			System.out.println("Already initialized===========================");
 			return;
 		} else {
 			System.out.println("initializing===========================");
-			init_run_count++;
 		}
 	
 		FileInputStream fn = null;
@@ -60,14 +55,16 @@ public class TestBase {
 
 		// Setup data files
 		// config property file
+		/*
 		CONFIG = new Properties();
-		fn = new FileInputStream(System.getProperty("user.dir") + "//src//test//resources//config//config.properties");
+		fn = new FileInputStream(System.getProperty("user.dir") + "//src//config//config.properties");
 		CONFIG.load(fn);
-		// OR Properties
+		*/
+		// Load object repositories (for storing page element addresses)
 		ADDR = new Properties();
-		fn = new FileInputStream(System.getProperty("user.dir") + "//src//test/resources//config//OR.properties");
+		fn = new FileInputStream(System.getProperty("user.dir") + "//src//test//resources//config//OR.properties");
 		ADDR.load(fn);
-		// test input data:
+		// Load test input data:
 		INPUT = new Properties();
 		fn = new FileInputStream(System.getProperty("user.dir") + "//src//test//resources//config//testData.properties");
 		INPUT.load(fn);

@@ -4,18 +4,24 @@
 		<classes>
 			<class name="testSuiteA.IdeTest">
 				<methods>
-				        <include name="loginTest" />
+				    <include name="loginTest" />
 					<include name="searchTest" />
-					<include name="sidebarTest" />
+					<include name="updateActiveModTest" />
 					<include name="changeFWTest" />
 					<include name="assignDevTest" />
 					<include name="deleteDevTest" />	
-					<include name="deleteFImpTest" />			
+					<include name="deleteFImpTest" />				
 					<include name="addFImpTest" />
 					<include name="rmBondTest" />
 					<include name="addWebhookTest" />
 					<include name="rmWebhookTest" />
 					<include name="opsDeployTest" />
+					<include name="changeFFTyepTest" />
+					<include name="updateOtherModTest" />
+					<include name="checkDevTagTest" />
+					<!-- 
+					<include name="agentServerTest" /> 
+					-->
 				</methods>			
 			</class>
 			<class name="testSuiteA.restApiTest">
