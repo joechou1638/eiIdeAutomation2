@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="212.357" tests="13" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="277.475" tests="15" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/lib"/>
@@ -24,7 +24,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/joechou/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf2630675398689236332.tmp"/>
+    <property name="classworlds.conf" value="/Users/joechou/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf6875151837819282182.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/joechou/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,17 +61,19 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="loginTest" classname="testSuiteA.IdeTest" time="5.04"/>
-  <testcase name="addFImpTest" classname="testSuiteA.IdeTest" time="12.3"/>
-  <testcase name="addWebhookTest" classname="testSuiteA.IdeTest" time="14.949"/>
-  <testcase name="assignDevTest" classname="testSuiteA.IdeTest" time="13.485"/>
-  <testcase name="changeFWTest" classname="testSuiteA.IdeTest" time="19.662"/>
-  <testcase name="deleteDevTest" classname="testSuiteA.IdeTest" time="11.063"/>
-  <testcase name="deleteFImpTest" classname="testSuiteA.IdeTest" time="11.549"/>
-  <testcase name="opsDeployTest" classname="testSuiteA.IdeTest" time="21.869"/>
-  <testcase name="rmBondTest" classname="testSuiteA.IdeTest" time="13.144"/>
-  <testcase name="rmWebhookTest" classname="testSuiteA.IdeTest" time="14.313"/>
-  <testcase name="searchTest" classname="testSuiteA.IdeTest" time="34.345"/>
-  <testcase name="sidebarTest" classname="testSuiteA.IdeTest" time="40.505"/>
-  <testcase name="agentEndponitTest" classname="testSuiteA.restApiTest" time="0.133"/>
+  <testcase name="loginTest" classname="testSuiteA.IdeTest" time="6.667"/>
+  <testcase name="addFImpTest" classname="testSuiteA.IdeTest" time="14.821"/>
+  <testcase name="addWebhookTest" classname="testSuiteA.IdeTest" time="14.037"/>
+  <testcase name="assignDevTest" classname="testSuiteA.IdeTest" time="13.437"/>
+  <testcase name="changeFWTest" classname="testSuiteA.IdeTest" time="26.452"/>
+  <testcase name="checkDevTagTest" classname="testSuiteA.IdeTest" time="16.221"/>
+  <testcase name="deleteDevTest" classname="testSuiteA.IdeTest" time="14.677"/>
+  <testcase name="deleteFImpTest" classname="testSuiteA.IdeTest" time="14.917"/>
+  <testcase name="opsDeployTest" classname="testSuiteA.IdeTest" time="25.21"/>
+  <testcase name="rmBondTest" classname="testSuiteA.IdeTest" time="14.162"/>
+  <testcase name="rmWebhookTest" classname="testSuiteA.IdeTest" time="13.222"/>
+  <testcase name="searchTest" classname="testSuiteA.IdeTest" time="26.247"/>
+  <testcase name="updateActiveModTest" classname="testSuiteA.IdeTest" time="47.482"/>
+  <testcase name="updateOtherModTest" classname="testSuiteA.IdeTest" time="29.532"/>
+  <testcase name="agentEndponitTest" classname="testSuiteA.restApiTest" time="0.391"/>
 </testsuite>

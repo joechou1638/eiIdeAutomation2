@@ -54,12 +54,6 @@ public class TestBase {
 		startLog();
 
 		// Setup data files
-		// config property file
-		/*
-		CONFIG = new Properties();
-		fn = new FileInputStream(System.getProperty("user.dir") + "//src//config//config.properties");
-		CONFIG.load(fn);
-		*/
 		// Load object repositories (for storing page element addresses)
 		ADDR = new Properties();
 		fn = new FileInputStream(System.getProperty("user.dir") + "//src//test//resources//config//OR.properties");

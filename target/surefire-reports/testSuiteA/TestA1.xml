@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="Joes-MacBook-Pro.local" name="testSuiteA.IdeTest" tests="13" failures="0" timestamp="23 Jan 2014 21:25:29 GMT" time="217.995" errors="0">
-  <testcase name="loginTest" time="5.04" classname="testSuiteA.IdeTest"/>
-  <testcase name="addFImpTest" time="12.3" classname="testSuiteA.IdeTest"/>
-  <testcase name="addWebhookTest" time="14.95" classname="testSuiteA.IdeTest"/>
-  <testcase name="assignDevTest" time="13.485" classname="testSuiteA.IdeTest"/>
-  <testcase name="changeFWTest" time="19.662" classname="testSuiteA.IdeTest"/>
-  <testcase name="deleteDevTest" time="11.064" classname="testSuiteA.IdeTest"/>
-  <testcase name="deleteFImpTest" time="11.55" classname="testSuiteA.IdeTest"/>
-  <testcase name="opsDeployTest" time="21.869" classname="testSuiteA.IdeTest"/>
-  <testcase name="rmBondTest" time="13.144" classname="testSuiteA.IdeTest"/>
-  <testcase name="rmWebhookTest" time="14.313" classname="testSuiteA.IdeTest"/>
-  <testcase name="searchTest" time="34.344" classname="testSuiteA.IdeTest"/>
-  <testcase name="sidebarTest" time="40.505" classname="testSuiteA.IdeTest"/>
-  <testcase name="agentEndponitTest" time="0.132" classname="testSuiteA.restApiTest"/>
+<testsuite hostname="Joes-MacBook-Pro.local" name="testSuiteA.IdeTest" tests="15" failures="0" timestamp="27 Jan 2014 22:35:14 GMT" time="283.792" errors="0">
+  <testcase name="loginTest" time="6.678" classname="testSuiteA.IdeTest"/>
+  <testcase name="addFImpTest" time="14.821" classname="testSuiteA.IdeTest"/>
+  <testcase name="addWebhookTest" time="14.037" classname="testSuiteA.IdeTest"/>
+  <testcase name="assignDevTest" time="13.436" classname="testSuiteA.IdeTest"/>
+  <testcase name="changeFWTest" time="26.453" classname="testSuiteA.IdeTest"/>
+  <testcase name="checkDevTagTest" time="16.221" classname="testSuiteA.IdeTest"/>
+  <testcase name="deleteDevTest" time="14.677" classname="testSuiteA.IdeTest"/>
+  <testcase name="deleteFImpTest" time="14.917" classname="testSuiteA.IdeTest"/>
+  <testcase name="opsDeployTest" time="25.21" classname="testSuiteA.IdeTest"/>
+  <testcase name="rmBondTest" time="14.162" classname="testSuiteA.IdeTest"/>
+  <testcase name="rmWebhookTest" time="13.222" classname="testSuiteA.IdeTest"/>
+  <testcase name="searchTest" time="26.246" classname="testSuiteA.IdeTest"/>
+  <testcase name="updateActiveModTest" time="47.482" classname="testSuiteA.IdeTest"/>
+  <testcase name="updateOtherModTest" time="29.532" classname="testSuiteA.IdeTest"/>
+  <testcase name="agentEndponitTest" time="0.391" classname="testSuiteA.restApiTest"/>
 </testsuite>

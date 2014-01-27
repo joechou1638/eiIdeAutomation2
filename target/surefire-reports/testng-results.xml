@@ -1,53 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="13" passed="13">
+<testng-results skipped="0" failed="0" total="15" passed="15">
   <reporter-output>
   </reporter-output>
-  <suite name="My suite" duration-ms="0" started-at="2014-01-23T13:25:29Z" finished-at="2014-01-23T13:25:29Z">
+  <suite name="My suite" duration-ms="0" started-at="2014-01-27T14:35:15Z" finished-at="2014-01-27T14:35:15Z">
     <groups>
     </groups>
   </suite>
-  <suite name="testSuiteA" duration-ms="217995" started-at="2014-01-23T13:21:50Z" finished-at="2014-01-23T13:25:28Z">
+  <suite name="testSuiteA" duration-ms="283792" started-at="2014-01-27T14:30:30Z" finished-at="2014-01-27T14:35:14Z">
     <groups>
     </groups>
-    <test name="TestA1" duration-ms="217995" started-at="2014-01-23T13:21:50Z" finished-at="2014-01-23T13:25:28Z">
+    <test name="TestA1" duration-ms="283792" started-at="2014-01-27T14:30:30Z" finished-at="2014-01-27T14:35:14Z">
       <class name="testSuiteA.IdeTest">
-        <test-method status="PASS" signature="beforeTest()" name="beforeTest" is-config="true" duration-ms="2138" started-at="2014-01-23T13:21:50Z" finished-at="2014-01-23T13:21:53Z">
+        <test-method status="PASS" signature="beforeTest()" name="beforeTest" is-config="true" duration-ms="2111" started-at="2014-01-27T14:30:30Z" finished-at="2014-01-27T14:30:32Z">
         </test-method>
-        <test-method status="PASS" signature="beforeTest()" name="beforeTest" is-config="true" duration-ms="1" started-at="2014-01-23T13:21:53Z" finished-at="2014-01-23T13:21:53Z">
+        <test-method status="PASS" signature="beforeTest()" name="beforeTest" is-config="true" duration-ms="0" started-at="2014-01-27T14:30:32Z" finished-at="2014-01-27T14:30:32Z">
         </test-method>
-        <test-method status="PASS" signature="loginTest()" name="loginTest" duration-ms="5040" started-at="2014-01-23T13:21:53Z" finished-at="2014-01-23T13:21:58Z">
+        <test-method status="PASS" signature="loginTest()" name="loginTest" duration-ms="6678" started-at="2014-01-27T14:30:32Z" finished-at="2014-01-27T14:30:39Z">
         </test-method>
-        <test-method status="PASS" signature="addFImpTest()" name="addFImpTest" duration-ms="12300" started-at="2014-01-23T13:21:58Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-23T13:22:10Z">
+        <test-method status="PASS" signature="addFImpTest()" name="addFImpTest" duration-ms="14821" started-at="2014-01-27T14:30:39Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-27T14:30:54Z">
         </test-method>
-        <test-method status="PASS" signature="addWebhookTest()" name="addWebhookTest" duration-ms="14950" started-at="2014-01-23T13:22:10Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-23T13:22:25Z">
+        <test-method status="PASS" signature="addWebhookTest()" name="addWebhookTest" duration-ms="14037" started-at="2014-01-27T14:30:54Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-27T14:31:08Z">
         </test-method>
-        <test-method status="PASS" signature="assignDevTest()" name="assignDevTest" duration-ms="13485" started-at="2014-01-23T13:22:25Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-23T13:22:38Z">
+        <test-method status="PASS" signature="assignDevTest()" name="assignDevTest" duration-ms="13436" started-at="2014-01-27T14:31:08Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-27T14:31:21Z">
         </test-method>
-        <test-method status="PASS" signature="changeFWTest()" name="changeFWTest" duration-ms="19662" started-at="2014-01-23T13:22:38Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-23T13:22:58Z">
+        <test-method status="PASS" signature="changeFWTest()" name="changeFWTest" duration-ms="26453" started-at="2014-01-27T14:31:21Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-27T14:31:47Z">
         </test-method>
-        <test-method status="PASS" signature="deleteDevTest()" name="deleteDevTest" duration-ms="11064" started-at="2014-01-23T13:22:58Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-23T13:23:09Z">
+        <test-method status="PASS" signature="checkDevTagTest()" name="checkDevTagTest" duration-ms="16221" started-at="2014-01-27T14:31:47Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-27T14:32:04Z">
         </test-method>
-        <test-method status="PASS" signature="deleteFImpTest()" name="deleteFImpTest" duration-ms="11550" started-at="2014-01-23T13:23:09Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-23T13:23:21Z">
+        <test-method status="PASS" signature="deleteDevTest()" name="deleteDevTest" duration-ms="14677" started-at="2014-01-27T14:32:04Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-27T14:32:18Z">
         </test-method>
-        <test-method status="PASS" signature="opsDeployTest()" name="opsDeployTest" duration-ms="21869" started-at="2014-01-23T13:23:21Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-23T13:23:43Z">
+        <test-method status="PASS" signature="deleteFImpTest()" name="deleteFImpTest" duration-ms="14917" started-at="2014-01-27T14:32:18Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-27T14:32:33Z">
         </test-method>
-        <test-method status="PASS" signature="rmBondTest()" name="rmBondTest" duration-ms="13144" started-at="2014-01-23T13:23:43Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-23T13:23:56Z">
+        <test-method status="PASS" signature="opsDeployTest()" name="opsDeployTest" duration-ms="25210" started-at="2014-01-27T14:32:33Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-27T14:32:59Z">
         </test-method>
-        <test-method status="PASS" signature="rmWebhookTest()" name="rmWebhookTest" duration-ms="14313" started-at="2014-01-23T13:23:56Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-23T13:24:10Z">
+        <test-method status="PASS" signature="rmBondTest()" name="rmBondTest" duration-ms="14162" started-at="2014-01-27T14:32:59Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-27T14:33:13Z">
         </test-method>
-        <test-method status="PASS" signature="searchTest()" name="searchTest" duration-ms="34344" started-at="2014-01-23T13:24:10Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-23T13:24:44Z">
+        <test-method status="PASS" signature="rmWebhookTest()" name="rmWebhookTest" duration-ms="13222" started-at="2014-01-27T14:33:13Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-27T14:33:26Z">
         </test-method>
-        <test-method status="PASS" signature="sidebarTest()" name="sidebarTest" duration-ms="40505" started-at="2014-01-23T13:24:44Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-23T13:25:25Z">
+        <test-method status="PASS" signature="searchTest()" name="searchTest" duration-ms="26246" started-at="2014-01-27T14:33:26Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-27T14:33:52Z">
         </test-method>
-        <test-method status="PASS" signature="end()" name="end" is-config="true" duration-ms="3445" started-at="2014-01-23T13:25:25Z" finished-at="2014-01-23T13:25:28Z">
+        <test-method status="PASS" signature="updateActiveModTest()" name="updateActiveModTest" duration-ms="47482" started-at="2014-01-27T14:33:52Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-27T14:34:40Z">
         </test-method>
-        <test-method status="PASS" signature="quit()" name="quit" is-config="true" duration-ms="568" started-at="2014-01-23T13:25:29Z" finished-at="2014-01-23T13:25:29Z">
+        <test-method status="PASS" signature="updateOtherModTest()" name="updateOtherModTest" duration-ms="29532" started-at="2014-01-27T14:34:40Z" depends-on-methods="testSuiteA.IdeTest.loginTest" finished-at="2014-01-27T14:35:09Z">
+        </test-method>
+        <test-method status="PASS" signature="end()" name="end" is-config="true" duration-ms="4112" started-at="2014-01-27T14:35:09Z" finished-at="2014-01-27T14:35:13Z">
+        </test-method>
+        <test-method status="PASS" signature="quit()" name="quit" is-config="true" duration-ms="563" started-at="2014-01-27T14:35:14Z" finished-at="2014-01-27T14:35:15Z">
         </test-method>
       </class>
       <class name="testSuiteA.restApiTest">
-        <test-method status="PASS" signature="agentEndponitTest()" name="agentEndponitTest" duration-ms="132" started-at="2014-01-23T13:25:28Z" finished-at="2014-01-23T13:25:28Z">
+        <test-method status="PASS" signature="agentEndponitTest()" name="agentEndponitTest" duration-ms="391" started-at="2014-01-27T14:35:13Z" finished-at="2014-01-27T14:35:14Z">
         </test-method>
-        <test-method status="PASS" signature="close()" name="close" is-config="true" duration-ms="0" started-at="2014-01-23T13:25:28Z" finished-at="2014-01-23T13:25:28Z">
+        <test-method status="PASS" signature="close()" name="close" is-config="true" duration-ms="0" started-at="2014-01-27T14:35:14Z" finished-at="2014-01-27T14:35:14Z">
         </test-method>
       </class>
     </test>

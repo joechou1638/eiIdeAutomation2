@@ -186,7 +186,7 @@ public class TestUtil extends TestBase{
 			FirefoxProfile ffprof = prof.getProfile("default");
 			driver = new FirefoxDriver(ffprof);		
 		} else if (browserType.equals("CH")) { 
-			String chromeDriverPath = getInput("chromeDriverPath");
+			String chromeDriverPath = System.getProperty("user.home") + getInput("chromeDriverPath");
 			LOG.debug("DEBUG: got chrome driver path: "+chromeDriverPath);
 			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 			driver = new ChromeDriver();

@@ -32,17 +32,21 @@ public class IdeTest extends TestBase {
   @Test
   public void loginTest()  { 
 	  
-	  LOG.info("INFO: Entering loginTest1()");	  
+	  LOG.info("INFO: Entering loginTest()");	  
 	  getTestUrl("testSiteUrl");
 	  String username = getInput("uname");
 	  String password = getInput("pword");
 	  LOG.debug("DEBUG:  login user name: "+username+", password: "+password+"=======");
       TestUtil.doLogin(username, password);
+      // If informational message displayed, close it.
+      if (driver.findElement(By.xpath(getAddr("msgButtonAddr"))).isDisplayed()) {
+    	  TestUtil.clickOnElement(getAddr("msgButtonAddr"), 500);
+      }
 	  String title = driver.getTitle();
 	  LOG.debug("DEBUG:  page title: "+title+"=======");
-	  TestUtil.mySleep(1000);
 	  Assert.assertTrue(title.contains("Electric Imp - IDE"));
-	  LOG.info("INFO: Exiting loginTest1()");
+	  TestUtil.mySleep(2000);
+	  LOG.info("INFO: Exiting loginTest()");
   }
   
   // Test device search box on top of Model panel (sidebar)
@@ -554,7 +558,7 @@ public class IdeTest extends TestBase {
 
 	      LOG.info("INFO: Entering updateOtherModTest()"+" for "+modType);
 	      TestUtil.mySleep(2000);
-	      // Get list of models in Factory Firmware section
+	      // Get list of models in section
 	      String modAddr = getAddr(modType+"ListAddr");
 	      int numMod = TestUtil.getNumElements(modAddr);
 	      if (numMod == 0){
