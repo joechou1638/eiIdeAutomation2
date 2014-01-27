@@ -1,4 +1,4 @@
-s is test automation framework, a maven project in java, mainly for testing Electric Imp's IDE, using Selenium, TestNG.
+This is test automation framework, a maven project in java, mainly for testing Electric Imp's IDE, using Selenium, TestNG.
 
 Currently the framework resides at: https://github.com/imp-hfiennes/test-automation, and the following steps will show you the how-tos.
 
